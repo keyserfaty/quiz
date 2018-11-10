@@ -2,6 +2,8 @@ import React from 'react'
 
 import Question from './Question'
 
+import { parseBool } from '../../../helpers'
+
 class QuestionsContainer extends React.Component {
   constructor (props) {
     super(props)
@@ -40,6 +42,7 @@ class QuestionsContainer extends React.Component {
         count={questionNum + 1}
         category={question.category}
         question={question.question}
+        correct={parseBool(question.correct_answer)}
         onNextQuestion={this.onNextQuestion}
       />
     )

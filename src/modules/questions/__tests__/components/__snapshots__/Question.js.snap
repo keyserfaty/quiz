@@ -2,14 +2,23 @@
 
 exports[`Should return a List element 1`] = `
 <View
-  style={Object {}}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "space-between",
+      "margin": 60,
+    }
+  }
 >
   <View
     style={Object {}}
   >
     <Text
       style={Object {}}
-    />
+    >
+      History
+    </Text>
   </View>
   <View
     style={Object {}}
@@ -27,6 +36,7 @@ exports[`Should return a List element 1`] = `
       <Text
         style={Object {}}
       >
+        1
          / 10
       </Text>
       <View
@@ -56,7 +66,6 @@ exports[`Should return a List element 1`] = `
           style={
             Array [
               Object {
-                "fontFamily": "Poppins-Regular",
                 "fontSize": 18,
                 "letterSpacing": 2,
                 "textAlign": "center",
@@ -98,7 +107,6 @@ exports[`Should return a List element 1`] = `
           style={
             Array [
               Object {
-                "fontFamily": "Poppins-Regular",
                 "fontSize": 18,
                 "letterSpacing": 2,
                 "textAlign": "center",

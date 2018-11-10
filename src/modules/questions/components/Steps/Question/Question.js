@@ -7,7 +7,7 @@ import StepTemplate from '../../StepTemplate'
 import styles from './statics/styles'
 
 const Question = props => {
-  const { onNextQuestion, category, question, count } = props
+  const { onNextQuestion, category, question, correct, count } = props
 
   const header = (
     <Text style={styles.title}>{category}</Text>
@@ -19,13 +19,13 @@ const Question = props => {
       <Button
         primary
         noSpin={true}
-        onPress={() => onNextQuestion({ question, response: false })}
+        onPress={() => onNextQuestion({ question, response: correct === false })}
       >No</Button>
       
       <Button
         primary
         noSpin={true}
-        onPress={() => onNextQuestion({ question, response: true })}
+        onPress={() => onNextQuestion({ question, response: correct === true })}
       >Yes</Button>
     </View>
   )

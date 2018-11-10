@@ -7,7 +7,9 @@ exports[`Should return a List element 1`] = `
   <View
     style={Object {}}
   >
-    <View>
+    <View
+      style={Object {}}
+    >
       <Text>
         You scored
       </Text>

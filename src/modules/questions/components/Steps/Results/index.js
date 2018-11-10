@@ -16,15 +16,16 @@ const Results = props => {
     </View>
   )
 
+  // TODO: should refresh questions
   const footer = (
-    <Button primary onPress={() => onNextStep(1)}>Play again?</Button>
+    <Button primary onPress={() => onNextStep(0)}>Play again?</Button>
   )
 
   return (
     <StepTemplate header={header} footer={footer}>
       { responses.map((answer, i) => (
         <View key={i} style={styles.response}>
-          <Text>{answer.correct ? '+' : '-'}</Text>
+          <Text>{answer.response ? '+' : '-'}</Text>
           <Text>{answer.question}</Text>
         </View>
       )) }

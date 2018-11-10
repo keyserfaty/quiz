@@ -13,14 +13,19 @@ class QuestionsContainer extends React.Component {
 
   onNextQuestion = response => {
     const { questionNum } = this.state
+    const { questions } = this.props
 
-    this.setState({
-      questionNum: questionNum + 1
-    })
+    const nextQuestionNum = questionNum + 1
 
-    if (this.props.onAddResponse) {
-      this.props.onAddResponse(response)
+    if (questions.length - 1 > nextQuestionNum) {
+      this.setState({
+        questionNum: nextQuestionNum
+      })
+      
+      return this.props.onAddResponse(response)
     }
+
+    this.props.onNextQuestion()
   }
 
   render () {

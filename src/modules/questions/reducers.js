@@ -4,8 +4,8 @@ import * as actions from './actions'
 
 const initialState = {
   status: 'init',
-  items: {},
-  error: ''
+  error: '',
+  items: []
 }
 
 const reducer = handleActions({
@@ -17,17 +17,14 @@ const reducer = handleActions({
   [actions.fetchAllSuccess]: (state, action) => ({
     ...state,
     status: 'success',
-    items: {
-      ...state.items,
-      ...action.payload.items
-    }
+    items: action.payload.items
   }),
 
   [actions.fetchAllFailure]: (state, action) => ({
     ...state,
     status: 'failure',
     error: action.payload.error
-  }),
+  })
 
 }, initialState)
 

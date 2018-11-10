@@ -20,16 +20,6 @@ test('Should add a step on click', () => {
   expect(component).toMatchSnapshot()
 })
 
-test('Should add a response', () => {
-  let component = renderer.render(<List />)
-  expect(component).toMatchSnapshot('initial render')
-
-  component.props.onAddResponse({ response: true })
-  component = renderer.getRenderOutput()
-  
-  expect(component).toMatchSnapshot('result should include item in array')
-})
-
 test('Should add a step number received', () => {
   let component = renderer.render(<List />)
   expect(component).toMatchSnapshot('initial render')
@@ -44,7 +34,6 @@ test('Should update step number even if step > 0', () => {
   let component = renderer.render(<List />)
   expect(component).toMatchSnapshot('initial render')
 
-  
   component.props.onNextStep(0)
   component = renderer.getRenderOutput()
   

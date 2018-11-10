@@ -8,8 +8,7 @@ class ListContainer extends React.Component {
     super(props)
 
     this.state = {
-      step: 0,
-      responses: []
+      step: 0
     }
   }
 
@@ -21,26 +20,13 @@ class ListContainer extends React.Component {
     })
   }
 
-  onAddResponse = response => {
-    const { responses } = this.state
-
-    this.setState({
-      responses: [
-        ...responses,
-        response
-      ]
-    })
-  }
-
   render () {
-    const { step, responses } = this.state
+    const { step } = this.state
 
     return (
       <List
         {...this.props}
         step={step}
-        responses={responses}
-        onAddResponse={this.onAddResponse}
         onNextStep={this.onNextStep}
       />
     )

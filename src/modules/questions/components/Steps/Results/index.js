@@ -10,6 +10,12 @@ class ResultsContainer extends React.Component {
     }
   }
 
+  componentWillUnmount () {
+    if (this.props.onCleanResponses) {
+      this.props.onCleanResponses()
+    }
+  }
+
   render () {
     return (
       <Results

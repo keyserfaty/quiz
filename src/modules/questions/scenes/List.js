@@ -8,6 +8,7 @@ import List from '../components/List'
 
 const mapStateToProps = state => ({
   questions: selectors.questions(state),
+  responses: selectors.responses(state),
   status: selectors.status(state)
 })
 
@@ -16,7 +17,9 @@ const mapDispatchToProps = (dispatch, props) => {
 
   return {
     onMount: () => fetchQuestions(),
-    onfetchQuestions: () => fetchQuestions()
+    onfetchQuestions: () => fetchQuestions(),
+    onAddResponse: response => dispatch({ type: actions.addResponse, payload: { response } }),
+    onCleanResponses: response => dispatch({ type: actions.cleanResponses })
   }
 }
 

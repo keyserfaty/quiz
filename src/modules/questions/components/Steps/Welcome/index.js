@@ -5,14 +5,19 @@ import Button from '../../../../../components/Button'
 import StepTemplate from '../../StepTemplate'
 
 const Welcome = props => {
-  const { onNextStep } = props
+  const { onNextStep, status } = props
 
   const header = (
     <Text>Welcome to the Trivia Challenge!</Text>
   )
 
   const footer = (
-    <Button primary onPress={() => onNextStep(1)}>Begin</Button>
+    <Button
+      primary
+      rerender={status}
+      status={status}
+      onPress={() => onNextStep(1)}
+    >Begin</Button>
   )
 
   return (

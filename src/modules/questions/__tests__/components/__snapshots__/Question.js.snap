@@ -11,19 +11,20 @@ exports[`Should return a List element 1`] = `
   <Text
     style={Object {}}
   >
-    Entertainment: Videogames
+    Some category
   </Text>
   <View
     style={Object {}}
   >
     <Text>
-      Some question text
+      Some question
     </Text>
   </View>
   <Text
     style={Object {}}
   >
-    1 / 10
+    1
+     / 10
   </Text>
   <View
     style={Object {}}

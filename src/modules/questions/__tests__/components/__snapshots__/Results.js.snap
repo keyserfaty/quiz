@@ -7,13 +7,15 @@ exports[`Should return a List element 1`] = `
   <View
     style={Object {}}
   >
-    <Text>
-      You scored
-    </Text>
-    <Text>
-      3
-       / 10
-    </Text>
+    <View>
+      <Text>
+        You scored
+      </Text>
+      <Text>
+        3
+         / 10
+      </Text>
+    </View>
   </View>
   <View
     style={Object {}}

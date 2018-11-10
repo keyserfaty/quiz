@@ -1,12 +1,7 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-  container: {
-    flex: 1
-  },
   title: {},
-  header: {},
-  body: {},
-  footer: {},
-  count: {}
+  count: {},
+  footer: {}
 })

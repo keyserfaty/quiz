@@ -1,15 +1,13 @@
 import React from 'react'
-import Questions from '../../components/Question/index'
+import Questions from '../../components/Steps/Question'
 
 import renderer from 'react-test-renderer'
 
-test('Should return a List element', () => {
-  const props = {
-    category: 'Some category',
-    question: 'Some question', 
-    count: 1
-  }
+import questions from '../../__mocks__/questions'
 
-  const tree = renderer.create(<Questions {...props} />).toJSON()
+test('Should return a List element', () => {
+  const component = renderer.create(<Questions questions={questions} />)
+
+  let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import Results from '../../components/Results/index'
+import Results from '../../components/Steps/Results/index'
 
 import renderer from 'react-test-renderer'
 
@@ -7,11 +7,11 @@ test('Should return a List element', () => {
   const props = {
     responses: [
       {
-        correct: true,
+        response: true,
         question: 'Some question 1'
       },
       {
-        correct: false,
+        response: false,
         question: 'Some question 2'
       }
     ],

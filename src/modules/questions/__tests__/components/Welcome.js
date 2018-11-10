@@ -1,5 +1,5 @@
 import React from 'react'
-import Welcome from '../../components/Welcome/index'
+import Welcome from '../../components/Steps/Welcome/index'
 
 import renderer from 'react-test-renderer'
 

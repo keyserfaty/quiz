@@ -9,15 +9,13 @@ exports[`Should return a List element 1`] = `
   >
     <Text
       style={Object {}}
-    >
-      Some category
-    </Text>
+    />
   </View>
   <View
     style={Object {}}
   >
     <Text>
-      Some question
+      Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili.
     </Text>
   </View>
   <View
@@ -29,7 +27,6 @@ exports[`Should return a List element 1`] = `
       <Text
         style={Object {}}
       >
-        1
          / 10
       </Text>
       <View

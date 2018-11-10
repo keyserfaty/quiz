@@ -9,5 +9,5 @@ export const error = state => state[NAMESPACE].error
 export const getCorrectResponses = createSelector(
   responses,
   list => list
-    .reduce((sum, next) => sum + next.response, 0)
+    .reduce((sum, next) => sum + next.correct, 0)
 )

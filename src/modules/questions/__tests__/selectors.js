@@ -11,13 +11,13 @@ describe('Should return a selector based on a state object', () => {
       items: questions,
       responses: [{
         question: 'some question 1',
-        response: true
+        correct: true
       }, {
         question: 'some question 2',
-        response: false
+        correct: false
       }, {
         question: 'some question 3',
-        response: true
+        correct: true
       }]
     }
   }
@@ -40,13 +40,13 @@ describe('Should return a selector based on a state object', () => {
     const value = selectors.responses(state)
     const expected = [{
       question: 'some question 1',
-      response: true
+      correct: true
     }, {
       question: 'some question 2',
-      response: false
+      correct: false
     }, {
       question: 'some question 3',
-      response: true
+      correct: true
     }]
 
     expect(value).toEqual(expected)

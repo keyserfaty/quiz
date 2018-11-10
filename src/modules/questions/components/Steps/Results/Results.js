@@ -7,12 +7,12 @@ import Button from '../../../../../components/Button'
 import styles from './statics/styles'
 
 const Results = props => {
-  const { onRestart, responses, score } = props
+  const { onRestart, responses, correctResponses } = props
 
   const header = (
     <View style={styles.header}>
       <Text>You scored</Text>
-      <Text>{score} / 10</Text>
+      <Text>{correctResponses} / 10</Text>
     </View>
   )
 

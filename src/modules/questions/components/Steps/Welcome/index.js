@@ -1,8 +1,8 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
 
-import Button from '../../../../components/Button'
-import StepTemplate from '../StepTemplate'
+import Button from '../../../../../components/Button'
+import StepTemplate from '../../StepTemplate'
 
 const Welcome = props => {
   const { onNextStep } = props

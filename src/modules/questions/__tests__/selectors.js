@@ -8,7 +8,17 @@ describe('Should return a selector based on a state object', () => {
     [NAMESPACE]: {
       status: 'init',
       error: '',
-      items: questions
+      items: questions,
+      responses: [{
+        question: 'some question 1',
+        response: true
+      }, {
+        question: 'some question 2',
+        response: false
+      }, {
+        question: 'some question 3',
+        response: true
+      }]
     }
   }
 
@@ -22,6 +32,22 @@ describe('Should return a selector based on a state object', () => {
   it('Should return question error', () => {
     const value = selectors.error(state)
     const expected = ''
+
+    expect(value).toEqual(expected)
+  })
+
+  it('Should return responses', () => {
+    const value = selectors.responses(state)
+    const expected = [{
+      question: 'some question 1',
+      response: true
+    }, {
+      question: 'some question 2',
+      response: false
+    }, {
+      question: 'some question 3',
+      response: true
+    }]
 
     expect(value).toEqual(expected)
   })
@@ -60,6 +86,13 @@ describe('Should return a selector based on a state object', () => {
         ]
       }
     ]
+
+    expect(value).toEqual(expected)
+  })
+
+  it('Should return number of correct responses', () => {
+    const value = selectors.getCorrectResponses(state)
+    const expected = 2
 
     expect(value).toEqual(expected)
   })

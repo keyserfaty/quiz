@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should return a List element 1`] = `
+<View>
+  <Text>
+    Welcome to the Trivia Challenge!
+  </Text>
+  <Text>
+    You will be presented with 10 true and false questions.
+  </Text>
+  <Text>
+    Can you score 100%?
+  </Text>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "rgba(255, 255, 255, 1)",
+        "borderRadius": 50,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 30,
+        "paddingVertical": 15,
+        "width": 235,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 18,
+            "letterSpacing": 2,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "rgba(55,175,255,0.87)",
+          },
+          undefined,
+        ]
+      }
+    >
+      BEGIN
+    </Text>
+  </View>
+</View>
+`;

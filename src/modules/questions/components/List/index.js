@@ -1,12 +1,45 @@
 import React from 'react'
-import { View, Text } from 'react-native'
 
-const List = () => {
-  return (
-    <View>
-      <Text>Hi from list</Text>
-    </View>
-  )
+import List from './List'
+
+class ListContainer extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      step: 0,
+      responses: []
+    }
+  }
+
+  onNextStep = () => {
+    const { step } = this.state
+
+    this.setState({
+      step
+    })
+  }
+
+  onAddResponse = response => {
+    const { responses } = this.state
+
+    this.setState({
+      responses: [
+        ...responses,
+        response
+      ]
+    })
+  }
+
+  render () {
+    return (
+      <List
+        {...this.props}
+        onAddResponse={this.onAddResponse}
+        onNextStep={this.onNextStep}
+      />
+    )
+  }
 }
 
-export default List
+export default ListContainer

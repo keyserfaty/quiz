@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should return a List element 1`] = `
+<View>
+  <Text>
+    Hi from list
+  </Text>
+</View>
+`;
+
+exports[`renders correctly 1`] = `
+<View>
+  <Text>
+    Hi from list
+  </Text>
+</View>
+`;

@@ -28,6 +28,7 @@
     "it": true,
     "expect": true,
     "describe": true,
-    "navigator": true
+    "navigator": true,
+    "test": true
   }
 }

@@ -11,9 +11,14 @@ const mapStateToProps = state => ({
   status: selectors.status(state)
 })
 
-const mapDispatchToProps = (dispatch, props) => ({
-  onMount: () => dispatch({ type: actions.fetchAll })
-})
+const mapDispatchToProps = (dispatch, props) => {
+  const fetchQuestions = () => dispatch({ type: actions.fetchAll })
+
+  return {
+    onMount: fetchQuestions(),
+    fetchQuestions: fetchQuestions()
+  }
+}
 
 export default connect(
   mapStateToProps,

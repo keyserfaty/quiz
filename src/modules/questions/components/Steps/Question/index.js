@@ -25,7 +25,7 @@ class QuestionsContainer extends React.Component {
       return this.props.onAddResponse(response)
     }
 
-    // this.props.onNextQuestion()
+    this.props.onNextStep()
   }
 
   render () {

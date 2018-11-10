@@ -6,7 +6,6 @@ import rootReducer from './reducers'
 import rootSaga from './sagas'
 
 export default function configure (initialState) {
-  console.log('holi from store')
   const sagaMiddleware = createSagaMiddleware()
 
   const middleware = createReactNavigationReduxMiddleware(

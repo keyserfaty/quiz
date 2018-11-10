@@ -22,7 +22,6 @@ export default StyleSheet.create({
     borderColor: '#fff'
   },
   text: {
-    fontFamily: 'Poppins-Regular',
     letterSpacing: 2,
     fontSize: 18,
     textAlign: 'center'

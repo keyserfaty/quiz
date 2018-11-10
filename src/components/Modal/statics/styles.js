@@ -21,14 +21,12 @@ export const styles = {
     paddingTop: 22
   },
   title: {
-    fontFamily: 'Poppins-Bold',
     fontSize: 19,
     lineHeight: 27,
     marginBottom: 8,
     color: 'rgba(0,0,0, 0.87)'
   },
   subtitle: {
-    fontFamily: 'Poppins-Bold',
     fontSize: 15,
     lineHeight: 24,
     color: 'rgba(0,0,0,0.60)'

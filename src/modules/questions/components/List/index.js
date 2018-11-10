@@ -1,7 +1,6 @@
 import React from 'react'
 
 import List from './List'
-import { setPriority } from 'os';
 
 class ListContainer extends React.Component {
   constructor (props) {
@@ -17,7 +16,7 @@ class ListContainer extends React.Component {
     const { step } = this.state
 
     this.setState({
-      step
+      step: step + 1
     })
   }
 

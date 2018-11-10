@@ -18,11 +18,13 @@ const Question = props => {
       <Text style={styles.count}>{count} / 10</Text>
       <Button
         primary
+        noSpin={true}
         onPress={() => onNextQuestion({ question, response: false })}
       >No</Button>
       
       <Button
         primary
+        noSpin={true}
         onPress={() => onNextQuestion({ question, response: true })}
       >Yes</Button>
     </View>

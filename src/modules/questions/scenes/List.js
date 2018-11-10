@@ -15,8 +15,8 @@ const mapDispatchToProps = (dispatch, props) => {
   const fetchQuestions = () => dispatch({ type: actions.fetchAll })
 
   return {
-    onMount: fetchQuestions(),
-    fetchQuestions: fetchQuestions()
+    onMount: () => fetchQuestions(),
+    fetchQuestions: () => fetchQuestions()
   }
 }
 

@@ -7,7 +7,7 @@ import Button from '../../../../../components/Button'
 import styles from './statics/styles'
 
 const Results = props => {
-  const { onNextStep, responses, score } = props
+  const { onRestart, responses, score } = props
 
   const header = (
     <View style={styles.header}>
@@ -16,9 +16,8 @@ const Results = props => {
     </View>
   )
 
-  // TODO: should refresh questions
   const footer = (
-    <Button primary onPress={() => onNextStep(0)}>Play again?</Button>
+    <Button primary onPress={() => onRestart(0)}>Play again?</Button>
   )
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Results from '../../components/Steps/Results/index'
+import Results from '../../components/Steps/Results'
 
 import Shallow from 'react-test-renderer/shallow'
 

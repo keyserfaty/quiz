@@ -1,9 +1,31 @@
 import React from 'react'
 import List from '../../components/List/index'
 
-import renderer from 'react-test-renderer'
+import Shallow from 'react-test-renderer/shallow'
 
-test('Should return a List element', () => {
-  const tree = renderer.create(<List />).toJSON()
-  expect(tree).toMatchSnapshot()
+const renderer = new Shallow()
+
+test('Should render', () => {
+  const component = renderer.render(<List />)
+  expect(component).toMatchSnapshot()
+})
+
+test('Should add a step on click', () => {
+  let component = renderer.render(<List />)
+  expect(component).toMatchSnapshot()
+
+  component.props.onNextStep()
+  component = renderer.getRenderOutput()
+  
+  expect(component).toMatchSnapshot()
+})
+
+test('Should add a response', () => {
+  let component = renderer.render(<List />)
+  expect(component).toMatchSnapshot()
+
+  component.props.onAddResponse({ response: true })
+  component = renderer.getRenderOutput()
+  
+  expect(component).toMatchSnapshot()
 })

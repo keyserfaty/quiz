@@ -31,7 +31,7 @@ const Question = props => {
   )
   return (
     <StepTemplate header={header} footer={footer}>
-      <Text>{question.question}</Text>
+      <Text>{question}</Text>
     </StepTemplate>
   )
 }

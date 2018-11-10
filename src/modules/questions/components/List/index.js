@@ -32,12 +32,13 @@ class ListContainer extends React.Component {
   }
 
   render () {
-    const { step } = this.state
+    const { step, responses } = this.state
 
     return (
       <List
         {...this.props}
         step={step}
+        responses={responses}
         onAddResponse={this.onAddResponse}
         onNextStep={this.onNextStep}
       />

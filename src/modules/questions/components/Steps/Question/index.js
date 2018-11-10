@@ -17,7 +17,7 @@ class QuestionsContainer extends React.Component {
 
     const nextQuestionNum = questionNum + 1
 
-    if (questions.length - 1 > nextQuestionNum) {
+    if (questions.length - 1 >= nextQuestionNum) {
       this.setState({
         questionNum: nextQuestionNum
       })
@@ -31,11 +31,15 @@ class QuestionsContainer extends React.Component {
   render () {
     const { questions } = this.props
     const { questionNum } = this.state
+
+    const question = questions[questionNum]
     
     return (
       <Question
         {...this.props}
-        question={questions[questionNum]}
+        count={questionNum + 1}
+        category={question.category}
+        question={question.question}
         onNextQuestion={this.onNextQuestion}
       />
     )

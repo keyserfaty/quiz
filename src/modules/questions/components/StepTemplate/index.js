@@ -4,10 +4,10 @@ import { View } from 'react-native'
 import styles from './statics/styles'
 
 const StepTemplate = props => {
-  const { children, header, footer } = props
+  const { style, children, header, footer } = props
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <View style={styles.header}>
         {header}
       </View>

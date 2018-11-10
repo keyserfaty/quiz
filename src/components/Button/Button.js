@@ -7,8 +7,8 @@ const Button = props => {
   const { onPress, children, primary, outline, disabled, style, status } = props
 
   const spinnerColor = {
-    primary: 'rgba(55,175,255,0.87)',
-    outline: 'rgba(255, 255, 255, 1)'
+    outline: 'rgba(116, 255, 198, 1)',
+    primary: '#2FF3A3'
   }
 
   return (

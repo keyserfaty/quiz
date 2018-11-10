@@ -6,18 +6,17 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 50,
-    width: 235
+    paddingHorizontal: 40,
+    borderRadius: 50
   },
-  primary: {
+  outline: {
     backgroundColor: 'rgba(255, 255, 255, 1)'
   },
   disabled: {
     backgroundColor: 'rgba(255, 255, 255, 0.5)'
   },
-  outline: {
-    backgroundColor: '#37AFFF',
+  primary: {
+    backgroundColor: '#2FF3A3',
     borderWidth: 1,
     borderColor: '#fff'
   },
@@ -26,10 +25,10 @@ export default StyleSheet.create({
     fontSize: 18,
     textAlign: 'center'
   },
-  textPrimary: {
-    color: 'rgba(55,175,255,0.87)'
-  },
   textOutline: {
+    color: '#2FF3A3'
+  },
+  textPrimary: {
     color: '#fff'
   },
   spinner: {

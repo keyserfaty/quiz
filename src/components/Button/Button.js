@@ -8,7 +8,7 @@ const Button = props => {
 
   const spinnerColor = {
     outline: 'rgba(116, 255, 198, 1)',
-    primary: '#2FF3A3'
+    primary: 'white'
   }
 
   return (

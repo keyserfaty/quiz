@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 
 import StepTemplate from '../../StepTemplate'
 import Button from '../../../../../components/Button'
@@ -11,8 +11,10 @@ const Results = props => {
 
   const header = (
     <View style={styles.header}>
-      <Text>You scored</Text>
-      <Text>{correctResponses} / 10</Text>
+      <Text style={styles.title}>You scored</Text>
+      <View style={styles.counter}>
+        <Text>{correctResponses} / 10</Text>
+      </View>
     </View>
   )
 
@@ -22,12 +24,16 @@ const Results = props => {
 
   return (
     <StepTemplate header={header} footer={footer}>
-      { responses.map((answer, i) => (
-        <View key={i} style={styles.response}>
-          <Text>{answer.correct ? '+' : '-'}</Text>
-          <Text>{answer.question}</Text>
+      <ScrollView>
+        <View>
+          { responses.map((answer, i) => (
+            <View key={i} style={styles.response}>
+              <Text style={styles.answer}>{answer.correct ? '✅' : '❌'}</Text>
+              <Text>{answer.question.replace(/&quot;/g, '"')}</Text>
+            </View>
+          ))}
         </View>
-      )) }
+      </ScrollView>
     </StepTemplate>
   )
 }

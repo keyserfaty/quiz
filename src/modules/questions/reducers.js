@@ -5,7 +5,8 @@ import * as actions from './actions'
 const initialState = {
   status: 'init',
   error: '',
-  items: []
+  items: [],
+  responses: []
 }
 
 const reducer = handleActions({
@@ -24,6 +25,19 @@ const reducer = handleActions({
     ...state,
     status: 'failure',
     error: action.payload.error
+  }),
+
+  [actions.addResponse]: (state, action) => ({
+    ...state,
+    responses: [
+      ...state.responses,
+      action.payload.response
+    ]
+  }),
+
+  [actions.cleanResponses]: (state, action) => ({
+    ...state,
+    responses: []
   })
 
 }, initialState)

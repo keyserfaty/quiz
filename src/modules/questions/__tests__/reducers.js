@@ -5,7 +5,8 @@ describe('Should return state object', () => {
   const state = {
     status: 'init',
     error: '',
-    items: []
+    items: [],
+    responses: []
   }
 
   it('Should return initial state', () => {
@@ -13,7 +14,8 @@ describe('Should return state object', () => {
     const expected = {
       status: 'init',
       error: '',
-      items: []
+      items: [],
+      responses: []
     }
 
     expect(value).toEqual(expected)
@@ -29,7 +31,8 @@ describe('Should return state object', () => {
     const expected = {
       status: 'pending',
       error: '',
-      items: []
+      items: [],
+      responses: []
     }
 
     expect(value).toEqual(expected)
@@ -47,7 +50,8 @@ describe('Should return state object', () => {
     const expected = {
       status: 'failure',
       error: 'some error',
-      items: []
+      items: [],
+      responses: []
     }
 
     expect(value).toEqual(expected)
@@ -62,7 +66,8 @@ describe('Should return state object', () => {
           id: 1,
           status: false
         }
-      ]
+      ],
+      responses: []
     }
 
     const action = {
@@ -86,7 +91,57 @@ describe('Should return state object', () => {
           id: 2,
           status: true
         }
-      ]
+      ],
+      responses: []
+    }
+
+    expect(value).toEqual(expected)
+  })
+
+  it('Adds a new response to list', () => {
+    const action = {
+      type: actions.addResponse,
+      payload: {
+        response: {
+          value: true
+        }
+      }
+    }
+
+    const value = reducer(state, action)
+    const expected = {
+      status: 'init',
+      error: '',
+      items: [],
+      responses: [{
+        value: true
+      }]
+    }
+
+    expect(value).toEqual(expected)
+  })
+
+  it('Clean all responses from list', () => {
+    const state = {
+      status: 'init',
+      error: '',
+      items: [],
+      responses: [{
+        value: true
+      }]
+    }
+
+    const action = {
+      type: actions.cleanResponses,
+      payload: {}
+    }
+
+    const value = reducer(state, action)
+    const expected = {
+      status: 'init',
+      error: '',
+      items: [],
+      responses: []
     }
 
     expect(value).toEqual(expected)

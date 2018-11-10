@@ -7,6 +7,7 @@ const RootNavigator = createStackNavigator({
   Home: { screen: splash },
   Questions: { screen: questions.scenes.List }
 }, {
+  initialRouteName: 'Home',
   headerMode: 'none',
   navigationOptions: {
     gesturesEnabled: false

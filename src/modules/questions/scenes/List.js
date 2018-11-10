@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { withHooks } from 'utils/withHooks'
+import { withHooks } from '../../../hooks/withHooks'
 
 import * as actions from '../actions'
 import * as selectors from '../selectors'

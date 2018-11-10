@@ -18,7 +18,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "react-native-axios": "^0.17.1",
     "react-navigation": "2.0.1",
-    "react-navigation-redux-helpers": "^2.0.8",
+    "react-navigation-redux-helpers": "^1.0.1",
     "react-redux": "^5.0.6",
     "reactotron-react-native": "^1.14.0",
     "reactotron-redux": "^1.13.0",
@@ -26,8 +26,8 @@
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "redux-saga": "^0.16.0",
-    "reselect": "^3.0.1",
-    "redux-saga-test-plan": "^3.7.0"
+    "redux-saga-test-plan": "^3.7.0",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

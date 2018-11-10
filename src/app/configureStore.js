@@ -1,14 +1,13 @@
-import { applyMiddleware, compose } from 'redux'
+import { applyMiddleware, compose, createStore } from 'redux'
 import { createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers'
-import Reactotron from 'reactotron-react-native'
 import createSagaMiddleware from 'redux-saga'
 
 import rootReducer from './reducers'
 import rootSaga from './sagas'
 
 export default function configure (initialState) {
-  const sagaMonitor = Reactotron.createSagaMonitor()
-  const sagaMiddleware = createSagaMiddleware({ sagaMonitor })
+  console.log('holi from store')
+  const sagaMiddleware = createSagaMiddleware()
 
   const middleware = createReactNavigationReduxMiddleware(
     'root',
@@ -20,17 +19,11 @@ export default function configure (initialState) {
     middleware
   ]
 
-  // Only includes in DEV mode
-  // if (__DEV__) {
-  //   const freeze = require('redux-freeze');
-  //   reduxMiddleware.push(freeze);
-  // }
-
   const enhancers = compose(
     applyMiddleware(...reduxMiddleware)
   )
 
-  const store = Reactotron.createStore(
+  const store = createStore(
     rootReducer,
     enhancers
   )

@@ -1,6 +1,5 @@
 import React from 'react'
-import Spinner from 'react-native-loading-spinner-overlay'
-import { View, Text } from 'react-native'
+import { View, Text, ActivityIndicator } from 'react-native'
 
 import { styles } from './statics/styles'
 
@@ -23,7 +22,7 @@ const Modal = (props) => {
           ) }
           { spinner && (
             <View style={styles.spinner}>
-              <Spinner visible={spinner} />
+              <ActivityIndicator size="large" color="#0000ff" />
             </View>
           )}
         </View>

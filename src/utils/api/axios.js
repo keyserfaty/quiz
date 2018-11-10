@@ -1,7 +1,7 @@
 import Axios from 'axios'
 import { AsyncStorage } from 'react-native'
 
-import NavigationService from 'app/services/NavigationService'
+import NavigationService from '../../app/services/NavigationService'
 
 import urls from '../../app/constants.json'
 

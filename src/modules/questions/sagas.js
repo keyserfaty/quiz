@@ -1,5 +1,4 @@
 import { put, takeEvery, call } from 'redux-saga/effects'
-// import { normalize } from '../../utils/helpers'
 
 import * as actions from './actions'
 
@@ -8,13 +7,14 @@ import { get } from '../../utils/api'
 export function * fetchAllWorker () {
   yield put({ type: actions.fetchAllInit })
 
-  const { res, error } = yield call(get, 'shopping/categories')
+  const { res, error } = yield call(get, '?amount=10&difficulty=hard&type=boolean')
 
   if (!res || error) {
-    return yield put({ type: actions.fetchAllFailure, payload: { error } })
+    yield put({ type: actions.fetchAllFailure, payload: { error } })
+    return { error }
   }
 
-  yield put({ type: actions.fetchAllSuccess, payload: { items: res.questions } })
+  yield put({ type: actions.fetchAllSuccess, payload: { items: res.results } })
 
   return { res }
 }

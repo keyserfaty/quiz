@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react", "jsx-a11y", "import"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard"
+  ],
+  "rules": {
+    "linebreak-style": ["off"],
+    "no-undef": ["error"],
+    "react/sort-comp": ["off"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.js", "test-config/*.js"] }
+    ],
+    "react/prop-types": 0,
+    "no-console": 0,
+    "no-extra-parens": ["error"],
+    "no-trailing-spaces": 0,
+    "spaced-comment": 0,
+    "eol-last": 0
+  },
+  "globals": {
+    "it": 0,
+    "expect": 0,
+    "describe": 0,
+    "navigator": 0
+  }
+}

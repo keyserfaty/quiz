@@ -33,7 +33,7 @@ exports[`Should return a List element 1`] = `
       style={Object {}}
     >
       <Text>
-        +
+        -
       </Text>
       <Text>
         Some question 1

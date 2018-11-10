@@ -1,13 +1,28 @@
 import React from 'react'
+
 import Questions from '../../components/Steps/Question'
 
-import renderer from 'react-test-renderer'
+import Shallow from 'react-test-renderer/shallow'
 
 import questions from '../../__mocks__/questions'
 
-test('Should return a List element', () => {
-  const component = renderer.create(<Questions questions={questions} />)
+test('Should render', () => {
+  const renderer = new Shallow()
+  
+  let component = renderer.render(<Questions questions={questions} />)
 
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(component).toMatchSnapshot()
+})
+
+test('Should add one to count in shallow', () => {
+  const renderer = new Shallow()
+  
+  let component = renderer.render(<Questions questions={questions} />)
+
+  expect(component).toMatchSnapshot()
+
+  component.props.onNextQuestion()
+  component = renderer.getRenderOutput()
+  
+  expect(component).toMatchSnapshot()
 })

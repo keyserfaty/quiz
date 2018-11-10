@@ -24,10 +24,16 @@ class QuestionsContainer extends React.Component {
         questionNum: nextQuestionNum
       })
       
-      return this.props.onAddResponse(response)
+      if (this.props.onAddResponse) {
+        this.props.onAddResponse(response)
+      }
+
+      return
     }
 
-    this.props.onNextStep()
+    if (this.props.onNextStep) {
+      this.props.onNextStep()
+    }
   }
 
   render () {

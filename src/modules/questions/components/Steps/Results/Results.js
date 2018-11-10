@@ -17,7 +17,7 @@ const Results = props => {
   )
 
   const footer = (
-    <Button primary onPress={() => onRestart(0)}>Play again?</Button>
+    <Button primary onPress={onRestart}>Play again?</Button>
   )
 
   return (

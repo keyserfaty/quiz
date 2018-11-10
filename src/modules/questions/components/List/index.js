@@ -1,4 +1,5 @@
 import React from 'react'
+import { isNil } from 'ramda'
 
 import List from './List'
 
@@ -16,7 +17,7 @@ class ListContainer extends React.Component {
     const { step } = this.state
 
     this.setState({
-      step: stepNum || step + 1
+      step: !isNil(stepNum) ? stepNum : step + 1
     })
   }
 

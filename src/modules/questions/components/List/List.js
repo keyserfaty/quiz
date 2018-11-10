@@ -2,7 +2,7 @@ import React from 'react'
 
 import Welcome from '../Steps/Welcome'
 import Question from '../Steps/Question'
-import Results from '../Steps/Results/Results'
+import Results from '../Steps/Results'
 
 const List = props => {
   const { step } = props

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should add a response 1`] = `
+exports[`Should add a response: initial render 1`] = `
 <List
   onAddResponse={[Function]}
   onNextStep={[Function]}
@@ -9,7 +9,7 @@ exports[`Should add a response 1`] = `
 />
 `;
 
-exports[`Should add a response 2`] = `
+exports[`Should add a response: result should include item in array 1`] = `
 <List
   onAddResponse={[Function]}
   onNextStep={[Function]}
@@ -77,6 +77,36 @@ exports[`Should render 1`] = `
   onAddResponse={[Function]}
   onNextStep={[Function]}
   responses={Array []}
+  step={0}
+/>
+`;
+
+exports[`Should update step number even if step > 0: initial render 1`] = `
+<List
+  onAddResponse={[Function]}
+  onNextStep={[Function]}
+  responses={
+    Array [
+      Object {
+        "response": true,
+      },
+    ]
+  }
+  step={3}
+/>
+`;
+
+exports[`Should update step number even if step > 0: result should be 0 1`] = `
+<List
+  onAddResponse={[Function]}
+  onNextStep={[Function]}
+  responses={
+    Array [
+      Object {
+        "response": true,
+      },
+    ]
+  }
   step={0}
 />
 `;

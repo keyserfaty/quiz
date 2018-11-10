@@ -1,7 +1,9 @@
 import React from 'react'
 import Results from '../../components/Steps/Results/index'
 
-import renderer from 'react-test-renderer'
+import Shallow from 'react-test-renderer/shallow'
+
+const renderer = new Shallow()
 
 test('Should return a List element', () => {
   const props = {
@@ -18,6 +20,6 @@ test('Should return a List element', () => {
     score: 3
   }
   
-  const tree = renderer.create(<Results {...props} />).toJSON()
-  expect(tree).toMatchSnapshot()
+  const component = renderer.render(<Results {...props} />)
+  expect(component).toMatchSnapshot()
 })

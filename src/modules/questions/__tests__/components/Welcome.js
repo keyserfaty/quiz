@@ -1,11 +1,11 @@
 import React from 'react'
 import Welcome from '../../components/Steps/Welcome/index'
 
-import renderer from 'react-test-renderer'
+import Shallow from 'react-test-renderer/shallow'
 
-test('Should return a List element', () => {
-  const onPress = () => console.log('pressed')
-  
-  const tree = renderer.create(<Welcome onPress={onPress} />).toJSON()
-  expect(tree).toMatchSnapshot()
+const renderer = new Shallow()
+
+test('Should render', () => {
+  const component = renderer.render(<Welcome />)
+  expect(component).toMatchSnapshot()
 })

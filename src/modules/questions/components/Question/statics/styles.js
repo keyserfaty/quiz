@@ -5,7 +5,8 @@ export default StyleSheet.create({
     flex: 1
   },
   title: {},
-  question: {},
-  count: {},
-  buttonsContainer: {}
+  header: {},
+  body: {},
+  footer: {},
+  count: {}
 })

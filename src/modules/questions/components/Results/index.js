@@ -3,17 +3,30 @@ import { View, Text } from 'react-native'
 
 import Button from '../../../../components/Button'
 
-const Welcome = props => {
-  const { onNextStep } = props
+import styles from './statics/styles'
+
+const Results = props => {
+  const { onNextStep, responses, score } = props
 
   return (
-    <View>
-      <Text>Welcome to the Trivia Challenge!</Text>
-      <Text>You will be presented with 10 true and false questions.</Text>
-      <Text>Can you score 100%?</Text>
-      <Button primary onPress={() => onNextStep(1)}>Begin</Button>
+    <View style={styles.container}>
+      <View style={styles.header}>
+        <Text>You scored</Text>
+        <Text>{score} / 10</Text>
+      </View>
+      <View style={styles.body}>
+        { responses.map((answer, i) => (
+          <View key={i} style={styles.response}>
+            <Text>{answer.correct ? '+' : '-'}</Text>
+            <Text>{answer.question}</Text>
+          </View>
+        )) }
+      </View>
+      <View style={styles.footer}>
+        <Button primary onPress={() => onNextStep(1)}>Play again?</Button>
+      </View>
     </View>
   )
 }
 
-export default Welcome
+export default Results

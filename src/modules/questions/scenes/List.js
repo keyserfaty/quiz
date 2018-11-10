@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch, props) => {
 
   return {
     onMount: () => fetchQuestions(),
-    fetchQuestions: () => fetchQuestions()
+    onfetchQuestions: () => fetchQuestions()
   }
 }
 

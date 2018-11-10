@@ -29,3 +29,13 @@ test('Should add a response', () => {
   
   expect(component).toMatchSnapshot()
 })
+
+test('Should add a step number received', () => {
+  let component = renderer.render(<List />)
+  expect(component).toMatchSnapshot('initial render')
+
+  component.props.onNextStep(3)
+  component = renderer.getRenderOutput()
+  
+  expect(component).toMatchSnapshot('result should be 2')
+})

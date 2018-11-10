@@ -14,6 +14,6 @@ export default {
   reducer,
   sagas,
   scenes: {
-    List,
+    List
   }
 }

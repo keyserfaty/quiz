@@ -1,36 +1,23 @@
 import React from 'react'
-import { View, Text } from 'react-native'
 
-import StepTemplate from '../../StepTemplate'
-import Button from '../../../../../components/Button'
+import Results from './Results'
 
-import styles from './statics/styles'
+class ResultsContainer extends React.Component {
+  onRestart = () => {
+    if (this.props.onNextStep && this.props.onfetchQuestions) {
+      this.props.onfetchQuestions()
+      this.props.onNextStep(0)
+    }
+  }
 
-const Results = props => {
-  const { onNextStep, responses, score } = props
-
-  const header = (
-    <View style={styles.header}>
-      <Text>You scored</Text>
-      <Text>{score} / 10</Text>
-    </View>
-  )
-
-  // TODO: should refresh questions
-  const footer = (
-    <Button primary onPress={() => onNextStep(0)}>Play again?</Button>
-  )
-
-  return (
-    <StepTemplate header={header} footer={footer}>
-      { responses.map((answer, i) => (
-        <View key={i} style={styles.response}>
-          <Text>{answer.correct ? '+' : '-'}</Text>
-          <Text>{answer.question}</Text>
-        </View>
-      )) }
-    </StepTemplate>
-  )
+  render () {
+    return (
+      <Results
+        {...this.props}
+        onRestart={this.onRestart}
+      />
+    )
+  }
 }
 
-export default Results
+export default ResultsContainer

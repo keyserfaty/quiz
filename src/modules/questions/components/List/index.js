@@ -12,11 +12,11 @@ class ListContainer extends React.Component {
     }
   }
 
-  onNextStep = () => {
+  onNextStep = stepNum => {
     const { step } = this.state
 
     this.setState({
-      step: step + 1
+      step: stepNum || step + 1
     })
   }
 

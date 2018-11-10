@@ -19,13 +19,13 @@ const Question = props => {
       <Button
         primary
         noSpin={true}
-        onPress={() => onNextQuestion({ question, response: correct === false })}
+        onPress={() => onNextQuestion({ question, correct: correct === false })}
       >No</Button>
       
       <Button
         primary
         noSpin={true}
-        onPress={() => onNextQuestion({ question, response: correct === true })}
+        onPress={() => onNextQuestion({ question, correct: correct === true })}
       >Yes</Button>
     </View>
   )

@@ -25,7 +25,7 @@ const Results = props => {
     <StepTemplate header={header} footer={footer}>
       { responses.map((answer, i) => (
         <View key={i} style={styles.response}>
-          <Text>{answer.response ? '+' : '-'}</Text>
+          <Text>{answer.correct ? '+' : '-'}</Text>
           <Text>{answer.question}</Text>
         </View>
       )) }

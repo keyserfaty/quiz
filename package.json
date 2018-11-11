@@ -29,10 +29,10 @@
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "redux-saga": "^0.16.0",
-    "redux-saga-test-plan": "^3.7.0",
     "reselect": "^3.0.1"
   },
   "devDependencies": {
+    "redux-saga-test-plan": "^3.7.0",
     "babel-eslint": "^10.0.1",
     "babel-preset-expo": "^5.0.0",
     "eslint": "^5.0.1",

@@ -15,7 +15,7 @@
     "react/sort-comp": ["off"],
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["**/*.test.js", "test-config/*.js"] }
+      { "devDependencies": ["**/__tests__/**/*.js"] }
     ],
     "no-console": 0,
     "no-extra-parens": ["error"],

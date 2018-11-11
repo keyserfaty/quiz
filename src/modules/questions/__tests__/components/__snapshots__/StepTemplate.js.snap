@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "flex": 1,
+        "justifyContent": "space-between",
+        "padding": 60,
+      },
+      undefined,
+    ]
+  }
+>
+  <Component
+    style={Object {}}
+  />
+  <Component
+    style={Object {}}
+  />
+  <Component
+    style={Object {}}
+  />
+</Component>
+`;
+
+exports[`Should render children 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "flex": 1,
+        "justifyContent": "space-between",
+        "padding": 60,
+      },
+      undefined,
+    ]
+  }
+>
+  <Component
+    style={Object {}}
+  >
+    header
+  </Component>
+  <Component
+    style={Object {}}
+  >
+    <Component>
+      <Component>
+        Some child
+      </Component>
+    </Component>
+  </Component>
+  <Component
+    style={Object {}}
+  >
+    footer
+  </Component>
+</Component>
+`;
+
+exports[`Should render contents 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "flex": 1,
+        "justifyContent": "space-between",
+        "padding": 60,
+      },
+      undefined,
+    ]
+  }
+>
+  <Component
+    style={Object {}}
+  >
+    header
+  </Component>
+  <Component
+    style={Object {}}
+  />
+  <Component
+    style={Object {}}
+  >
+    footer
+  </Component>
+</Component>
+`;

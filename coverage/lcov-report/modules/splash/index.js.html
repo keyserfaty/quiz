@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for modules/questions/reducers.js</title>
+    <title>Code coverage report for modules/splash/index.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">modules/questions</a> reducers.js
+      <a href="../../index.html">All files</a> / <a href="index.html">modules/splash</a> index.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">33.33% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/7</span>
+        <span class='fraction'>1/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,18 +30,18 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">33.33% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>1/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">33.33% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>7/7</span>
+        <span class='fraction'>1/3</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -72,48 +72,21 @@
 27
 28
 29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+30</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -125,59 +98,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { handleActions } from 'redux-actions'
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react'
+import { View, Text } from 'react-native'
 &nbsp;
-import * as actions from './actions'
+import { styles } from './statics/styles'
 &nbsp;
-const initialState = {
-  status: 'init',
-  error: '',
-  items: [],
-  responses: []
+class SplashScreen extends Component {
+  handleSplashLogic = <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
+    // Should handle token presence here if it was necessary
+<span class="cstat-no" title="statement not covered" >    this.props.navigation.navigate('Questions', {</span>
+      transition: 'default'
+    })
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentDidMount () {
+<span class="cstat-no" title="statement not covered" >    this.handleSplashLogic()</span>
+  }
+&nbsp;
+  render () {
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;View style={styles.titleContainer}&gt;
+          &lt;Text&gt;Questions!&lt;/Text&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    )
+  }
 }
 &nbsp;
-const reducer = handleActions({
-  [actions.fetchAllInit]: state =&gt; ({
-    ...state,
-    status: 'pending'
-  }),
-&nbsp;
-  [actions.fetchAllSuccess]: (state, action) =&gt; ({
-    ...state,
-    status: 'success',
-    items: action.payload.items
-  }),
-&nbsp;
-  [actions.fetchAllFailure]: (state, action) =&gt; ({
-    ...state,
-    status: 'failure',
-    error: action.payload.error
-  }),
-&nbsp;
-  [actions.addResponse]: (state, action) =&gt; ({
-    ...state,
-    responses: [
-      ...state.responses,
-      action.payload.response
-    ]
-  }),
-&nbsp;
-  [actions.cleanResponses]: (state, action) =&gt; ({
-    ...state,
-    responses: []
-  })
-&nbsp;
-}, initialState)
-&nbsp;
-export default reducer
+export default SplashScreen
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

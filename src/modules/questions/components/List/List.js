@@ -16,6 +16,9 @@ const List = props => {
 
     case 2:
       return <Results {...props} />
+
+    default:
+      return <Welcome {...props} />
   }
 }
 

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for modules/questions/components/Steps/Results/Results.js</title>
+    <title>Code coverage report for components/Alert/index.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../../../prettify.css" />
-    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../../../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,32 +16,32 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../../../index.html">All files</a> / <a href="index.html">modules/questions/components/Steps/Results</a> Results.js
+      <a href="../../index.html">All files</a> / <a href="index.html">components/Alert</a> index.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>3/3</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -80,10 +80,15 @@
 35
 36
 37
-38
-39
-40
-41</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+38</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -91,11 +96,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -104,15 +104,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,46 +118,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ActivityIndicator } from 'react-native'
 &nbsp;
-import StepTemplate from '../../StepTemplate'
-import Button from '../../../../../components/Button'
+import { styles } from './statics/styles'
 &nbsp;
-import styles from './statics/styles'
+const Modal = (props) =&gt; {
+  const { title, subtitle, spinner } = props
 &nbsp;
-const Results = <span class="fstat-no" title="function not covered" >pr</span>ops =&gt; {
-  const { onRestart, responses, correctResponses } = <span class="cstat-no" title="statement not covered" >props</span>
-&nbsp;
-  const header = (
-<span class="cstat-no" title="statement not covered" >    &lt;View style={styles.header}&gt;</span>
-      &lt;Text style={styles.title}&gt;You scored&lt;/Text&gt;
-      &lt;View style={styles.counter}&gt;
-        &lt;Text&gt;{correctResponses} / 10&lt;/Text&gt;
+  return (
+    &lt;View style={styles.container}&gt;
+      &lt;View style={styles.modal}&gt;
+        &lt;View style={styles.titleContainer}&gt;
+          { title &amp;&amp; (
+            &lt;Text style={styles.title}&gt;
+              {title}
+            &lt;/Text&gt;
+          ) }
+          { subtitle &amp;&amp; (
+            &lt;Text style={styles.subtitle}&gt;
+              {subtitle}
+            &lt;/Text&gt;
+          ) }
+          { spinner &amp;&amp; (
+            &lt;View style={styles.spinner}&gt;
+              &lt;ActivityIndicator size="large" color="#0000ff" /&gt;
+            &lt;/View&gt;
+          )}
+        &lt;/View&gt;
+        &lt;View style={styles.children}&gt;
+          {props.children}
+        &lt;/View&gt;
       &lt;/View&gt;
     &lt;/View&gt;
   )
-&nbsp;
-  const footer = (
-<span class="cstat-no" title="statement not covered" >    &lt;Button primary onPress={onRestart}&gt;Play again?&lt;/Button&gt;</span>
-  )
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;StepTemplate header={header} footer={footer}&gt;
-      &lt;ScrollView&gt;
-        &lt;View&gt;
-          { responses.map(<span class="fstat-no" title="function not covered" >(a</span>nswer, i) =&gt; (
-<span class="cstat-no" title="statement not covered" >            &lt;View key={i} style={styles.response}&gt;</span>
-              &lt;Text style={styles.answer}&gt;{answer.correct ? '✅' : '❌'}&lt;/Text&gt;
-              &lt;Text&gt;{answer.question.replace(/&amp;quot;/g, '"')}&lt;/Text&gt;
-            &lt;/View&gt;
-          ))}
-        &lt;/View&gt;
-      &lt;/ScrollView&gt;
-    &lt;/StepTemplate&gt;
-  )
 }
 &nbsp;
-export default Results</pre></td></tr>
+export default Modal
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
@@ -172,7 +163,7 @@ export default Results</pre></td></tr>
   generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Nov 11 2018 06:19:18 GMT-0500 (EST)
 </div>
 </div>
-<script src="../../../../../prettify.js"></script>
+<script src="../../prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -180,6 +171,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../../../../sorter.js"></script>
+<script src="../../sorter.js"></script>
 </body>
 </html>

@@ -7,7 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "test": "node_modules/.bin/jest --watch"
+    "test": "node_modules/.bin/jest --watch",
+    "test-coverage": "node_modules/.bin/jest --coverage"
   },
   "dependencies": {
     "axios": "^0.18.0",

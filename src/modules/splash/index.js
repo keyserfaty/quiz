@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { View, Text } from 'react-native'
 
 import { styles } from './statics/styles'
@@ -24,6 +25,10 @@ class SplashScreen extends Component {
       </View>
     )
   }
+}
+
+SplashScreen.propTypes = {
+  navigation: PropTypes.object
 }
 
 export default SplashScreen

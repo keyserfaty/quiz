@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { View } from 'react-native'
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers'
 import { connect } from 'react-redux'
@@ -31,6 +32,11 @@ class App extends Component {
       </View>
     )
   }
+}
+
+App.propTypes = {
+  dispatch: PropTypes.func,
+  nav: PropTypes.object
 }
 
 const mapStateToProps = state => ({

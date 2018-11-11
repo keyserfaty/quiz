@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { TouchableOpacity, Text, ActivityIndicator } from 'react-native'
 
 import styles from './statics/styles'
@@ -30,6 +31,17 @@ const Button = props => {
       ]}>{children.toUpperCase()}</Text>
     </TouchableOpacity>
   )
+}
+
+Button.propTypes = {
+  onPress: PropTypes.func,
+  children: PropTypes.any,
+  primary: PropTypes.string,
+  status: PropTypes.string,
+  outline: PropTypes.string,
+  disabled: PropTypes.bool,
+  style: PropTypes.object
+
 }
 
 export default Button

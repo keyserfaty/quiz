@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { View, Text, ActivityIndicator } from 'react-native'
 
 import { styles } from './statics/styles'
@@ -32,6 +33,14 @@ const Modal = (props) => {
       </View>
     </View>
   )
+}
+
+Modal.propTypes = {
+  type: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  spinner: PropTypes.bool,
+  children: PropTypes.any
 }
 
 export default Modal

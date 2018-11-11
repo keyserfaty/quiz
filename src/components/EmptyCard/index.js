@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { View } from 'react-native'
 
 import styles from './statics/styles'
@@ -11,6 +12,11 @@ const EmptyCard = props => {
       {props.children}
     </View>
   )
+}
+
+EmptyCard.propTypes = {
+  style: PropTypes.object,
+  children: PropTypes.any
 }
 
 export default EmptyCard

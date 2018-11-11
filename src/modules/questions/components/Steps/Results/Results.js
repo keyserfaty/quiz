@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { View, Text, ScrollView } from 'react-native'
 
 import StepTemplate from '../../StepTemplate'
@@ -36,6 +37,12 @@ const Results = props => {
       </ScrollView>
     </StepTemplate>
   )
+}
+
+Results.propTypes = {
+  onRestart: PropTypes.func,
+  responses: PropTypes.array,
+  correctResponses: PropTypes.number
 }
 
 export default Results

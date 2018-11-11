@@ -17,7 +17,6 @@
       "error",
       { "devDependencies": ["**/*.test.js", "test-config/*.js"] }
     ],
-    "react/prop-types": 0,
     "no-console": 0,
     "no-extra-parens": ["error"],
     "no-trailing-spaces": 0,
@@ -29,6 +28,7 @@
     "expect": true,
     "describe": true,
     "navigator": true,
-    "test": true
+    "test": true,
+    "jest": true
   }
 }

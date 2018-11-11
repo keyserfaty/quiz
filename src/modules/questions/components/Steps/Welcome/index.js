@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Text } from 'react-native'
 
 import Button from '../../../../../components/Button'
@@ -28,6 +29,11 @@ const Welcome = props => {
       </Card>
     </StepTemplate>
   )
+}
+
+Welcome.propTypes = {
+  onNextStep: PropTypes.func, 
+  status: PropTypes.string
 }
 
 export default Welcome

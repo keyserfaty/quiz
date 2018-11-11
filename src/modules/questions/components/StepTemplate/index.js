@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { View } from 'react-native'
 
 import styles from './statics/styles'
@@ -19,6 +20,13 @@ const StepTemplate = props => {
       </View>
     </View>
   )
+}
+
+StepTemplate.propTypes = {
+  style: PropTypes.string,
+  header: PropTypes.string,
+  footer: PropTypes.string,
+  children: PropTypes.any
 }
 
 export default StepTemplate

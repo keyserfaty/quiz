@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { View, Text } from 'react-native'
 
 import Button from '../../../../../components/Button'
@@ -40,6 +41,14 @@ const Question = props => {
       <Text style={styles.text}>{question.replace(/&quot;/g, '"')}</Text>
     </StepTemplate>
   )
+}
+
+Question.propTypes = {
+  onNextQuestion: PropTypes.func,
+  category: PropTypes.string,
+  question: PropTypes.string,
+  correct: PropTypes.bool,
+  count: PropTypes.number
 }
 
 export default Question

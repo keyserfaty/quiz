@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should be able to receive a status: status should be random 1`] = `
-<Button
-  disabled={true}
-  onPress={[Function]}
-  status="pending"
-/>
-`;
-
 exports[`Should change status on press: initial render 1`] = `
 <Button
   disabled={false}

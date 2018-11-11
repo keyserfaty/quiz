@@ -1,5 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Should only display a subtitle: initial render 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.3)",
+      "height": 1334,
+      "justifyContent": "center",
+      "position": "absolute",
+      "top": 0,
+      "width": 750,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 3,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 24,
+        "paddingTop": 22,
+        "width": "80%",
+      }
+    }
+  >
+    <Component>
+      <Component
+        style={
+          Object {
+            "color": "rgba(0,0,0,0.60)",
+            "fontSize": 15,
+            "lineHeight": 24,
+          }
+        }
+      >
+        Some subtitle
+      </Component>
+    </Component>
+    <Component
+      style={
+        Object {
+          "bottom": 0,
+          "marginTop": 120,
+          "position": "relative",
+        }
+      }
+    />
+  </Component>
+</Component>
+`;
+
+exports[`Should only display a title: initial render 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.3)",
+      "height": 1334,
+      "justifyContent": "center",
+      "position": "absolute",
+      "top": 0,
+      "width": 750,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 3,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 24,
+        "paddingTop": 22,
+        "width": "80%",
+      }
+    }
+  >
+    <Component>
+      <Component
+        style={
+          Object {
+            "color": "rgba(0,0,0, 0.87)",
+            "fontSize": 19,
+            "lineHeight": 27,
+            "marginBottom": 8,
+          }
+        }
+      >
+        Some title
+      </Component>
+    </Component>
+    <Component
+      style={
+        Object {
+          "bottom": 0,
+          "marginTop": 120,
+          "position": "relative",
+        }
+      }
+    />
+  </Component>
+</Component>
+`;
+
 exports[`Should render: initial render 1`] = `
 <Component
   style={

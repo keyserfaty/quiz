@@ -11,3 +11,15 @@ test('Should render', () => {
 
   expect(component).toMatchSnapshot('initial render')
 })
+
+test('Should only display a title', () => {
+  let component = renderer.render(<Alert title='Some title' />)
+
+  expect(component).toMatchSnapshot('initial render')
+})
+
+test('Should only display a subtitle', () => {
+  let component = renderer.render(<Alert subtitle='Some subtitle' />)
+
+  expect(component).toMatchSnapshot('initial render')
+})

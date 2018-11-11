@@ -1,50 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should add one to count in shallow 1`] = `
-<Question
-  category="History"
-  correct={true}
-  count={1}
-  onNextQuestion={[Function]}
-  question="Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili."
-  questions={
-    Array [
-      Object {
-        "category": "History",
-        "correct_answer": "True",
-        "difficulty": "hard",
-        "incorrect_answers": Array [
-          "False",
-        ],
-        "question": "Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili.",
-        "type": "boolean",
-      },
-      Object {
-        "category": "Entertainment: Video Games",
-        "correct_answer": "False",
-        "difficulty": "hard",
-        "incorrect_answers": Array [
-          "True",
-        ],
-        "question": "In the game &quot;Melty Blood Actress Again Current Code&quot;, you can enter Blood Heat mode in Half Moon style.",
-        "type": "boolean",
-      },
-      Object {
-        "category": "Science & Nature",
-        "correct_answer": "True",
-        "difficulty": "hard",
-        "incorrect_answers": Array [
-          "False",
-        ],
-        "question": "It was once believed that injecting shark cartilage into people would prevent them from contracting cancer.",
-        "type": "boolean",
-      },
-    ]
-  }
-/>
-`;
-
-exports[`Should add one to count in shallow 2`] = `
+exports[`Should add one to count: count should be 2 1`] = `
 <Question
   category="Entertainment: Video Games"
   correct={false}
@@ -88,7 +44,95 @@ exports[`Should add one to count in shallow 2`] = `
 />
 `;
 
-exports[`Should render 1`] = `
+exports[`Should add one to count: count should be 3 1`] = `
+<Question
+  category="Science & Nature"
+  correct={true}
+  count={3}
+  onNextQuestion={[Function]}
+  question="It was once believed that injecting shark cartilage into people would prevent them from contracting cancer."
+  questions={
+    Array [
+      Object {
+        "category": "History",
+        "correct_answer": "True",
+        "difficulty": "hard",
+        "incorrect_answers": Array [
+          "False",
+        ],
+        "question": "Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili.",
+        "type": "boolean",
+      },
+      Object {
+        "category": "Entertainment: Video Games",
+        "correct_answer": "False",
+        "difficulty": "hard",
+        "incorrect_answers": Array [
+          "True",
+        ],
+        "question": "In the game &quot;Melty Blood Actress Again Current Code&quot;, you can enter Blood Heat mode in Half Moon style.",
+        "type": "boolean",
+      },
+      Object {
+        "category": "Science & Nature",
+        "correct_answer": "True",
+        "difficulty": "hard",
+        "incorrect_answers": Array [
+          "False",
+        ],
+        "question": "It was once believed that injecting shark cartilage into people would prevent them from contracting cancer.",
+        "type": "boolean",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Should add one to count: initial render 1`] = `
+<Question
+  category="History"
+  correct={true}
+  count={1}
+  onNextQuestion={[Function]}
+  question="Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili."
+  questions={
+    Array [
+      Object {
+        "category": "History",
+        "correct_answer": "True",
+        "difficulty": "hard",
+        "incorrect_answers": Array [
+          "False",
+        ],
+        "question": "Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili.",
+        "type": "boolean",
+      },
+      Object {
+        "category": "Entertainment: Video Games",
+        "correct_answer": "False",
+        "difficulty": "hard",
+        "incorrect_answers": Array [
+          "True",
+        ],
+        "question": "In the game &quot;Melty Blood Actress Again Current Code&quot;, you can enter Blood Heat mode in Half Moon style.",
+        "type": "boolean",
+      },
+      Object {
+        "category": "Science & Nature",
+        "correct_answer": "True",
+        "difficulty": "hard",
+        "incorrect_answers": Array [
+          "False",
+        ],
+        "question": "It was once believed that injecting shark cartilage into people would prevent them from contracting cancer.",
+        "type": "boolean",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Should render: initial render 1`] = `
 <Question
   category="History"
   correct={true}

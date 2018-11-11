@@ -10,17 +10,50 @@ exports[`Should render 1`] = `
       Begin
     </ButtonWithSpinnerContainer>
   }
-  header={
-    <Component>
+>
+  <EmptyCard>
+    <Component
+      style={
+        Array [
+          Object {
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "lineHeight": 26,
+            "paddingBottom": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
       Welcome to the Trivia Challenge!
     </Component>
-  }
->
-  <Component>
-    You will be presented with 10 true and false questions.
-  </Component>
-  <Component>
-    Can you score 100%?
-  </Component>
+    <Component
+      style={
+        Object {
+          "fontSize": 16,
+          "lineHeight": 24,
+          "textAlign": "center",
+        }
+      }
+    >
+      You will be presented with 10 true and false questions.
+    </Component>
+    <Component
+      style={
+        Array [
+          Object {
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "center",
+          },
+          Object {
+            "marginTop": 16,
+          },
+        ]
+      }
+    >
+      Can you score 100%?
+    </Component>
+  </EmptyCard>
 </StepTemplate>
 `;

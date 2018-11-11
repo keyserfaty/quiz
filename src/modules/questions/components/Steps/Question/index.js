@@ -17,22 +17,18 @@ class QuestionsContainer extends React.Component {
     const { questionNum } = this.state
     const { questions } = this.props
 
-    const nextQuestionNum = questionNum + 1
+    this.setState({
+      questionNum: questionNum + 1
+    })
 
-    if (questions.length - 1 >= nextQuestionNum) {
-      this.setState({
-        questionNum: nextQuestionNum
-      })
-      
+    if (questions.length - 1 >= questionNum) {  
       if (this.props.onAddResponse) {
         this.props.onAddResponse(response)
       }
-
-      return
-    }
-
-    if (this.props.onNextStep) {
-      this.props.onNextStep()
+    } else {
+      if (this.props.onNextStep) {
+        this.props.onNextStep()
+      }
     }
   }
 

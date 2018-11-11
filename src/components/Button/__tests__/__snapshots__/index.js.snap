@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should change status on press: initial render 1`] = `
+<Button
+  disabled={false}
+  onPress={[Function]}
+  status="init"
+/>
+`;
+
+exports[`Should change status on press: status should be pending 1`] = `
+<Button
+  disabled={true}
+  onPress={[Function]}
+  status="pending"
+/>
+`;
+
+exports[`Should render: initial render 1`] = `
+<Button
+  disabled={false}
+  onPress={[Function]}
+  status="init"
+/>
+`;

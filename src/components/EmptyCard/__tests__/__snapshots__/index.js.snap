@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should display a different style: initial render 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 3,
+        "elevation": 5,
+        "marginBottom": 8,
+        "paddingHorizontal": 16,
+        "paddingVertical": 24,
+        "shadowColor": "rgba(0,0,0,0.5)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 11,
+        "shadowRadius": 2,
+        "width": "100%",
+      },
+      Object {
+        "prop": true,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Should display some children: initial render 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 3,
+        "elevation": 5,
+        "marginBottom": 8,
+        "paddingHorizontal": 16,
+        "paddingVertical": 24,
+        "shadowColor": "rgba(0,0,0,0.5)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 11,
+        "shadowRadius": 2,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <Component>
+    <Component>
+      Some children
+    </Component>
+  </Component>
+</Component>
+`;
+
+exports[`Should render: initial render 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 3,
+        "elevation": 5,
+        "marginBottom": 8,
+        "paddingHorizontal": 16,
+        "paddingVertical": 24,
+        "shadowColor": "rgba(0,0,0,0.5)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 11,
+        "shadowRadius": 2,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+/>
+`;

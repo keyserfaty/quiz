@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Should be able to receive a status: status should be random 1`] = `
+<Button
+  disabled={true}
+  onPress={[Function]}
+  status="pending"
+/>
+`;
+
 exports[`Should change status on press: initial render 1`] = `
 <Button
   disabled={false}
@@ -13,6 +21,24 @@ exports[`Should change status on press: status should be pending 1`] = `
   disabled={true}
   onPress={[Function]}
   status="pending"
+/>
+`;
+
+exports[`Should keep status on press if noSpin is true: initial render 1`] = `
+<Button
+  disabled={false}
+  noSpin={true}
+  onPress={[Function]}
+  status="init"
+/>
+`;
+
+exports[`Should keep status on press if noSpin is true: status should be init 1`] = `
+<Button
+  disabled={false}
+  noSpin={true}
+  onPress={[Function]}
+  status="init"
 />
 `;
 

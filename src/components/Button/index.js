@@ -1,5 +1,6 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import { isNil } from 'ramda'
 
 import Button from './Button'
 
@@ -14,19 +15,27 @@ class ButtonWithSpinnerContainer extends React.Component {
   }
 
   componentDidMount () {
+    const { status, disabled } = this.props
+
     this.setState({
-      status: this.props.status || 'init',
-      disabled: this.props.disabled || false
+      status: !isNil(status) ? status : 'init',
+      disabled: !isNil(disabled) ? disabled : false
     })
   }
 
   componentDidUpdate (oldProps) {
+    const { status, disabled } = this.props
+
     if (this.props.rerender !== oldProps.rerender) {
       this.setState({ status: 'init' })
     }
 
-    if (this.props.disabled !== oldProps.disabled) {
-      this.setState({ disabled: this.props.disabled })
+    if (disabled !== oldProps.disabled) {
+      this.setState({ disabled })
+    }
+
+    if (status !== oldProps.status) {
+      this.setState({ status })
     }
   }
 

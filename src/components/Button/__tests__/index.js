@@ -12,6 +12,18 @@ test('Should render', () => {
   expect(component).toMatchSnapshot('initial render')
 })
 
+test('Should keep status on press if noSpin is true', () => {
+  let component = renderer.render(<Button noSpin={true} onPress={() => {}} />)
+  component = renderer.getRenderOutput()
+
+  expect(component).toMatchSnapshot('initial render')
+
+  component.props.onPress()
+  component = renderer.getRenderOutput()
+  
+  expect(component).toMatchSnapshot('status should be init')
+})
+
 test('Should change status on press', () => {
   let component = renderer.render(<Button onPress={() => {}} />)
 

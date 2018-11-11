@@ -23,3 +23,9 @@ test('Should only display a subtitle', () => {
 
   expect(component).toMatchSnapshot('initial render')
 })
+
+test('Should display a spinner', () => {
+  let component = renderer.render(<Alert title='Some title' spinner={true} />)
+
+  expect(component).toMatchSnapshot('initial render')
+})

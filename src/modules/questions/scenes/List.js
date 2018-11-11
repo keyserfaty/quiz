@@ -4,6 +4,8 @@ import { withHooks } from '../../../hooks/withHooks'
 import * as actions from '../actions'
 import * as selectors from '../selectors'
 
+import { alerts } from '../constants'
+
 import List from '../components/List'
 
 const mapStateToProps = state => ({
@@ -18,9 +20,15 @@ const mapDispatchToProps = (dispatch, props) => {
 
   return {
     onMount: () => fetchQuestions(),
+    onForeground: () => dispatch(alerts.success),
+    onDisconnect: () => dispatch(alerts.failure),
+    onConnect: () => {
+      dispatch(alerts.success)
+      fetchQuestions()
+    },
     onfetchQuestions: () => fetchQuestions(),
     onAddResponse: response => dispatch({ type: actions.addResponse, payload: { response } }),
-    onCleanResponses: response => dispatch({ type: actions.cleanResponses })
+    onCleanResponses: () => dispatch({ type: actions.cleanResponses })
   }
 }
 

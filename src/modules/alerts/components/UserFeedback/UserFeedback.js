@@ -8,7 +8,7 @@ const UserFeedback = props => {
   const { onCloseModal, data } = props
   
   return (
-    <Alert title={data.title} subtitle={data.subtitle}>
+    <Alert type={data.type} title={data.title} subtitle={data.subtitle}>
       <TouchableOpacity style={styles.footer} onPress={onCloseModal}>
         <Text style={styles.buttonText}>Accept</Text>
       </TouchableOpacity>

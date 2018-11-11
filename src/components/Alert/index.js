@@ -4,10 +4,10 @@ import { View, Text, ActivityIndicator } from 'react-native'
 import { styles } from './statics/styles'
 
 const Modal = (props) => {
-  const { title, subtitle, spinner } = props
+  const { type, title, subtitle, spinner } = props
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, type]}>
       <View style={styles.modal}>
         <View style={styles.titleContainer}>
           { title && (

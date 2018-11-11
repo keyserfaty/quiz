@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541935159062" clover="3.2.0">
-  <project timestamp="1541935159063" name="All files">
-    <metrics statements="135" coveredstatements="81" conditionals="61" coveredconditionals="17" methods="52" coveredmethods="28" elements="248" coveredelements="126" complexity="0" loc="135" ncloc="135" packages="20" files="30" classes="30">
+<coverage generated="1541935792592" clover="3.2.0">
+  <project timestamp="1541935792592" name="All files">
+    <metrics statements="136" coveredstatements="94" conditionals="62" coveredconditionals="22" methods="52" coveredmethods="32" elements="250" coveredelements="148" complexity="0" loc="136" ncloc="136" packages="20" files="30" classes="30">
       <package name="app.services">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <file name="NavigationService.js" path="/Users/karen/Code/interviews/questions/src/app/services/NavigationService.js">
@@ -31,7 +31,7 @@
         <metrics statements="22" coveredstatements="10" conditionals="28" coveredconditionals="3" methods="6" coveredmethods="3"/>
         <file name="Button.js" path="/Users/karen/Code/interviews/questions/src/components/Button/Button.js">
           <metrics statements="4" coveredstatements="1" conditionals="14" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="6" count="5" type="stmt"/>
+          <line num="6" count="7" type="stmt"/>
           <line num="7" count="0" type="stmt"/>
           <line num="9" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
@@ -55,7 +55,7 @@
           <line num="51" count="2" type="stmt"/>
           <line num="56" count="4" type="stmt"/>
           <line num="58" count="4" type="stmt"/>
-          <line num="69" count="5" type="stmt"/>
+          <line num="69" count="7" type="stmt"/>
         </file>
       </package>
       <package name="components.Button.statics">
@@ -68,7 +68,7 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="index.js" path="/Users/karen/Code/interviews/questions/src/components/EmptyCard/index.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="6" count="3" type="stmt"/>
+          <line num="6" count="4" type="stmt"/>
           <line num="7" count="3" type="stmt"/>
           <line num="9" count="3" type="stmt"/>
         </file>
@@ -131,15 +131,16 @@
         </file>
       </package>
       <package name="modules.questions.components.List">
-        <metrics statements="12" coveredstatements="7" conditionals="5" coveredconditionals="2" methods="4" coveredmethods="3"/>
+        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
         <file name="List.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/List/List.js">
-          <metrics statements="6" coveredstatements="1" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="7" count="1" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="10" count="0" type="cond" truecount="0" falsecount="3"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
+          <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="10" count="4" type="cond" truecount="4" falsecount="0"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
         </file>
         <file name="index.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/List/index.js">
           <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
@@ -152,12 +153,12 @@
         </file>
       </package>
       <package name="modules.questions.components.StepTemplate">
-        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="index.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/StepTemplate/index.js">
-          <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="6" count="4" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="7" count="3" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
         </file>
       </package>
       <package name="modules.questions.components.StepTemplate.statics">
@@ -170,7 +171,7 @@
         <metrics statements="21" coveredstatements="12" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="3"/>
         <file name="Question.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/Steps/Question/Question.js">
           <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-          <line num="9" count="2" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
           <line num="19" count="0" type="stmt"/>
@@ -203,15 +204,15 @@
         </file>
       </package>
       <package name="modules.questions.components.Steps.Results">
-        <metrics statements="12" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <metrics statements="12" coveredstatements="7" conditionals="8" coveredconditionals="1" methods="5" coveredmethods="3"/>
         <file name="Results.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/Steps/Results/Results.js">
-          <metrics statements="6" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="9" count="2" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="25" count="0" type="stmt"/>
-          <line num="30" count="0" type="stmt"/>
+          <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+          <line num="9" count="4" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="30" count="1" type="stmt"/>
         </file>
         <file name="index.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/Steps/Results/index.js">
           <metrics statements="6" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="1"/>
@@ -233,7 +234,7 @@
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <file name="index.js" path="/Users/karen/Code/interviews/questions/src/modules/questions/components/Steps/Welcome/index.js">
           <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-          <line num="10" count="2" type="stmt"/>
+          <line num="10" count="3" type="stmt"/>
           <line num="11" count="1" type="stmt"/>
           <line num="14" count="1" type="stmt"/>
           <line num="18" count="0" type="stmt"/>

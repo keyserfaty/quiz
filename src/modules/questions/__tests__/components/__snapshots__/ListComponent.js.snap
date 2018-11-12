@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render 1`] = `<Welcome />`;
+
+exports[`Should render step 0 1`] = `
+<Welcome
+  step={0}
+/>
+`;
+
+exports[`Should render step 1 1`] = `
+<QuestionsContainer
+  step={1}
+/>
+`;
+
+exports[`Should render step 2 1`] = `
+<ResultsContainer
+  step={2}
+/>
+`;

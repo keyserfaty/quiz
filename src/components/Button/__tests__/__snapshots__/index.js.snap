@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should change status on press: initial render 1`] = `
+<Button
+  disabled={false}
+  onPress={[Function]}
+  status="init"
+/>
+`;
+
+exports[`Should change status on press: status should be pending 1`] = `
+<Button
+  disabled={true}
+  onPress={[Function]}
+  status="pending"
+/>
+`;
+
+exports[`Should keep status on press if noSpin is true: initial render 1`] = `
+<Button
+  disabled={false}
+  noSpin={true}
+  onPress={[Function]}
+  status="init"
+/>
+`;
+
+exports[`Should keep status on press if noSpin is true: status should be init 1`] = `
+<Button
+  disabled={false}
+  noSpin={true}
+  onPress={[Function]}
+  status="init"
+/>
+`;
+
+exports[`Should render: initial render 1`] = `
+<Button
+  disabled={false}
+  onPress={[Function]}
+  status="init"
+/>
+`;

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render 1`] = `
+<StepTemplate
+  footer={
+    <ButtonWithSpinnerContainer
+      onPress={[Function]}
+      primary={true}
+    >
+      Play again?
+    </ButtonWithSpinnerContainer>
+  }
+  header={
+    <Component>
+      <Component
+        style={
+          Object {
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "lineHeight": 26,
+            "textAlign": "center",
+          }
+        }
+      >
+        You scored
+      </Component>
+      <Component
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#74FFC6",
+            "borderWidth": 1,
+            "marginBottom": 16,
+            "marginTop": 16,
+            "padding": 6,
+          }
+        }
+      >
+        <Component>
+          1
+           / 10
+        </Component>
+      </Component>
+    </Component>
+  }
+>
+  <Component
+    style={
+      Object {
+        "height": 450,
+      }
+    }
+  >
+    <ScrollViewMock>
+      <Component
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginBottom": 8,
+          }
+        }
+      >
+        <Component
+          style={
+            Object {
+              "lineHeight": 16,
+              "marginRight": 8,
+            }
+          }
+        >
+          ✅
+        </Component>
+        <Component>
+          Some question
+        </Component>
+      </Component>
+    </ScrollViewMock>
+  </Component>
+</StepTemplate>
+`;

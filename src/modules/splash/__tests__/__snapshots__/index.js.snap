@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render 1`] = `
+<Component
+  style={
+    Object {
+      "backgroundColor": "#37AFFF",
+      "flex": 1,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "marginTop": 20,
+      }
+    }
+  >
+    <Component>
+      Questions!
+    </Component>
+  </Component>
+</Component>
+`;

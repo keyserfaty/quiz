@@ -6,14 +6,47 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "node_modules/.bin/jest --watch",
+    "test-coverage": "node_modules/.bin/jest --coverage",
+    "linter": "node_modules/.bin/eslint src"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "expo": "^31.0.2",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.25.0",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react-native-axios": "^0.17.1",
+    "react-navigation": "2.0.1",
+    "react-navigation-redux-helpers": "^1.0.1",
+    "react-redux": "^5.0.6",
+    "reactotron-react-native": "^1.14.0",
+    "reactotron-redux": "^1.13.0",
+    "reactotron-redux-saga": "^1.13.0",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "react-test-renderer": "^16.6.1",
+    "redux-saga-test-plan": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-expo": "^5.0.0",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-watch": "^4.0.0",
+    "jest-expo": "^31.0.0"
+  },
+  "jest": {
+    "preset": "jest-expo"
   }
 }

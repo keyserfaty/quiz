@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render: initial render 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "height": 1334,
+      "justifyContent": "flex-end",
+      "position": "absolute",
+      "width": 750,
+    }
+  }
+>
+  <Component
+    style={
+      Array [
+        Object {
+          "borderRadius": 3,
+          "justifyContent": "space-between",
+          "marginBottom": 8,
+          "padding": 16,
+          "width": "95%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Component
+        style={
+          Object {
+            "color": "rgba(0,0,0, 0.5)",
+            "fontSize": 16,
+            "lineHeight": 27,
+          }
+        }
+      >
+        Some msg
+      </Component>
+      <TouchableOpacity
+        activeOpacity={0.2}
+      >
+        <Component
+          style={
+            Object {
+              "color": "rgba(0,0,0, 0.5)",
+              "fontSize": 16,
+              "lineHeight": 27,
+            }
+          }
+        >
+          X
+        </Component>
+      </TouchableOpacity>
+    </Component>
+  </Component>
+</Component>
+`;

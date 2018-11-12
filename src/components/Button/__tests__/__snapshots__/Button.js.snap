@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render: initial render 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignSelf": "center",
+        "borderRadius": 50,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingHorizontal": 40,
+        "paddingVertical": 15,
+      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+    ]
+  }
+>
+  <Component
+    style={
+      Array [
+        Object {
+          "fontSize": 18,
+          "letterSpacing": 2,
+          "textAlign": "center",
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    CONTENT
+  </Component>
+</TouchableOpacity>
+`;

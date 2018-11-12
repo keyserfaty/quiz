@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should add a step number received: initial render 1`] = `
+<List
+  onNextStep={[Function]}
+  step={1}
+/>
+`;
+
+exports[`Should add a step number received: result should be 2 1`] = `
+<List
+  onNextStep={[Function]}
+  step={3}
+/>
+`;
+
+exports[`Should add a step on click 1`] = `
+<List
+  onNextStep={[Function]}
+  step={0}
+/>
+`;
+
+exports[`Should add a step on click 2`] = `
+<List
+  onNextStep={[Function]}
+  step={1}
+/>
+`;
+
+exports[`Should render 1`] = `
+<List
+  onNextStep={[Function]}
+  step={0}
+/>
+`;
+
+exports[`Should update step number even if step > 0: initial render 1`] = `
+<List
+  onNextStep={[Function]}
+  step={3}
+/>
+`;
+
+exports[`Should update step number even if step > 0: result should be 0 1`] = `
+<List
+  onNextStep={[Function]}
+  step={0}
+/>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should return a List element 1`] = `
+<Results
+  onRestart={[Function]}
+  responses={
+    Array [
+      Object {
+        "question": "Some question 1",
+        "response": true,
+      },
+      Object {
+        "question": "Some question 2",
+        "response": false,
+      },
+    ]
+  }
+  score={3}
+/>
+`;

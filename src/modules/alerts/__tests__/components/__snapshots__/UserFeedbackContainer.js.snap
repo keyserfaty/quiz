@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render success 1`] = `
+<UserFeedback
+  data={
+    Object {
+      "msg": "some text",
+      "type": "success",
+    }
+  }
+  onCloseAlert={[Function]}
+/>
+`;

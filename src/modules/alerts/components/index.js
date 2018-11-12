@@ -2,7 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
 
-import modals from './types'
+import alerts from './types'
 import * as actions from '../actions'
 
 import UserFeedback from './UserFeedback/UserFeedbackContainer'
@@ -15,7 +15,7 @@ const Modal = (props) => {
   if (!type) return <View />
 
   switch (type) {
-    case modals.userFeedback:
+    case alerts.userFeedback:
       return <UserFeedback {...props} />
 
     default:

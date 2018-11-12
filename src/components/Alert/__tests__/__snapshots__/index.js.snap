@@ -3,15 +3,18 @@
 exports[`Should display a spinner: initial render 1`] = `
 <Component
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "rgba(0, 0, 0, 0.3)",
-      "height": 1334,
-      "justifyContent": "center",
-      "position": "absolute",
-      "top": 0,
-      "width": 750,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.3)",
+        "height": 1334,
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 0,
+        "width": 750,
+      },
+      undefined,
+    ]
   }
 >
   <Component
@@ -72,15 +75,18 @@ exports[`Should display a spinner: initial render 1`] = `
 exports[`Should only display a subtitle: initial render 1`] = `
 <Component
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "rgba(0, 0, 0, 0.3)",
-      "height": 1334,
-      "justifyContent": "center",
-      "position": "absolute",
-      "top": 0,
-      "width": 750,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.3)",
+        "height": 1334,
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 0,
+        "width": 750,
+      },
+      undefined,
+    ]
   }
 >
   <Component
@@ -124,15 +130,18 @@ exports[`Should only display a subtitle: initial render 1`] = `
 exports[`Should only display a title: initial render 1`] = `
 <Component
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "rgba(0, 0, 0, 0.3)",
-      "height": 1334,
-      "justifyContent": "center",
-      "position": "absolute",
-      "top": 0,
-      "width": 750,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.3)",
+        "height": 1334,
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 0,
+        "width": 750,
+      },
+      undefined,
+    ]
   }
 >
   <Component
@@ -177,15 +186,18 @@ exports[`Should only display a title: initial render 1`] = `
 exports[`Should render: initial render 1`] = `
 <Component
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "rgba(0, 0, 0, 0.3)",
-      "height": 1334,
-      "justifyContent": "center",
-      "position": "absolute",
-      "top": 0,
-      "width": 750,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.3)",
+        "height": 1334,
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 0,
+        "width": 750,
+      },
+      undefined,
+    ]
   }
 >
   <Component

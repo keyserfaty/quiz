@@ -28,7 +28,7 @@ export const styles = {
     bottom: 0
   },
   success: {
-    backgroundColor: '#86DE8E'
+    backgroundColor: '#2FF3A3'
   },
   failure: {
     backgroundColor: '#E67777'

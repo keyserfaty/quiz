@@ -16,6 +16,7 @@ const Welcome = props => {
       primary
       rerender={status}
       status={status}
+      disabled={status !== 'success'}
       onPress={() => onNextStep(1)}
     >Begin</Button>
   )

@@ -25,16 +25,16 @@ const Results = props => {
 
   return (
     <StepTemplate header={header} footer={footer}>
-      <ScrollView>
-        <View>
+      <View style={styles.answers}>
+        <ScrollView>
           { responses.map((answer, i) => (
             <View key={i} style={styles.response}>
               <Text style={styles.answer}>{answer.correct ? '✅' : '❌'}</Text>
               <Text>{answer.question.replace(/&quot;/g, '"')}</Text>
             </View>
           ))}
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
     </StepTemplate>
   )
 }

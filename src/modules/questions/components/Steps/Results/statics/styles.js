@@ -12,7 +12,8 @@ export default StyleSheet.create({
     borderColor: '#74FFC6',
     borderWidth: 1,
     marginTop: 16,
-    textAlign: 'center'
+    alignItems: 'center',
+    marginBottom: 16
   },
   response: {
     flexDirection: 'row',
@@ -22,5 +23,8 @@ export default StyleSheet.create({
   answer: {
     lineHeight: 16,
     marginRight: 8
+  },
+  answers: {
+    height: 450
   }
 })

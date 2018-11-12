@@ -23,7 +23,7 @@ const StepTemplate = props => {
 }
 
 StepTemplate.propTypes = {
-  style: PropTypes.object,
+  style: PropTypes.array,
   header: PropTypes.any,
   footer: PropTypes.any,
   children: PropTypes.any

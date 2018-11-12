@@ -36,9 +36,9 @@ const Button = props => {
 Button.propTypes = {
   onPress: PropTypes.func,
   children: PropTypes.any,
-  primary: PropTypes.string,
   status: PropTypes.string,
-  outline: PropTypes.string,
+  primary: PropTypes.bool,
+  outline: PropTypes.bool,
   disabled: PropTypes.bool,
   style: PropTypes.object
 

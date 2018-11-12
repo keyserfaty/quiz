@@ -4,7 +4,7 @@ import { View } from 'react-native'
 import { createReduxBoundAddListener } from 'react-navigation-redux-helpers'
 import { connect } from 'react-redux'
 
-import Modal from '../modules/modals/components'
+import Alert from '../modules/alerts/components'
 
 import RootNavigator from './AppRouter'
 import NavigationService from './services/NavigationService'
@@ -28,7 +28,7 @@ class App extends Component {
             addListener
           }}
         />
-        <Modal />
+        <Alert />
       </View>
     )
   }

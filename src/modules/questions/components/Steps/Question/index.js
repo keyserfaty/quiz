@@ -20,12 +20,12 @@ class QuestionsContainer extends React.Component {
     this.setState({
       questionNum: questionNum + 1
     })
-
-    if (questions.length - 1 >= questionNum) {  
-      if (this.props.onAddResponse) {
-        this.props.onAddResponse(response)
-      }
-    } else {
+    
+    if (this.props.onAddResponse) {
+      this.props.onAddResponse(response)
+    }
+    
+    if (questions.length - 1 === questionNum) {  
       if (this.props.onNextStep) {
         this.props.onNextStep()
       }

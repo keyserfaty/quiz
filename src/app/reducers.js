@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 
 import AppNavigator from './AppRouter'
 
-import modals from '../modules/modals'
+import alerts from '../modules/alerts'
 import questions from '../modules/questions'
 
 const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams())
@@ -16,7 +16,7 @@ const navReducer = (state = initialState, action) => {
 
 const rootReducer = combineReducers({
   nav: navReducer,
-  [modals.constants.NAMESPACE]: modals.reducer,
+  [alerts.constants.NAMESPACE]: alerts.reducer,
   [questions.constants.NAMESPACE]: questions.reducer
 })
 

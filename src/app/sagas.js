@@ -1,6 +1,6 @@
 import { fork, all } from 'redux-saga/effects'
 
-import modals from '../modules/modals'
+import alerts from '../modules/alerts'
 import questions from '../modules/questions'
 
 function startSagas (...sagas) {
@@ -10,6 +10,6 @@ function startSagas (...sagas) {
 }
 
 export default startSagas(
-  ...modals.sagas,
+  ...alerts.sagas,
   ...questions.sagas
 )

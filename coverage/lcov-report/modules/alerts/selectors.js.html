@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for modules/questions/selectors.js</title>
+    <title>Code coverage report for modules/alerts/selectors.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">modules/questions</a> selectors.js
+      <a href="../../index.html">All files</a> / <a href="index.html">modules/alerts</a> selectors.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>11/11</span>
+        <span class='fraction'>8/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>7/7</span>
+        <span class='fraction'>4/4</span>
       </div>
     </div>
   </div>
@@ -49,37 +49,19 @@
 4
 5
 6
-7
-8
-9
-10
-11
-12
-13</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+7</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createSelector } from 'reselect'
-import { NAMESPACE } from './constants'
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { NAMESPACE } from './constants'
 &nbsp;
-export const questions = state =&gt; state[NAMESPACE].items
-export const responses = state =&gt; state[NAMESPACE].responses
-export const status = state =&gt; state[NAMESPACE].status
-export const error = state =&gt; state[NAMESPACE].error
-&nbsp;
-export const getCorrectResponses = createSelector(
-  responses,
-  list =&gt; list
-    .reduce((sum, next) =&gt; sum + next.correct, 0)
-)</pre></td></tr>
+export const type = state =&gt; state[NAMESPACE].type
+export const data = state =&gt; state[NAMESPACE].data
+export const onConfirm = state =&gt; state[NAMESPACE].onConfirm
+export const onCancel = state =&gt; state[NAMESPACE].onCancel
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->

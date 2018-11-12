@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render failure 1`] = `
+<Alert
+  msg="some text"
+  onCloseAlert={[Function]}
+  type="failure"
+/>
+`;
+
+exports[`Should render success 1`] = `
+<Alert
+  msg="some text"
+  onCloseAlert={[Function]}
+  type="success"
+/>
+`;

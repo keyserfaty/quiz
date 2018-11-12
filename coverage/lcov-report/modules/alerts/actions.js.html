@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for modules/questions/actions.js</title>
+    <title>Code coverage report for modules/alerts/actions.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">modules/questions</a> actions.js
+      <a href="../../index.html">All files</a> / <a href="index.html">modules/alerts</a> actions.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>2/2</span>
       </div>
     </div>
   </div>
@@ -47,29 +47,14 @@
 2
 3
 4
-5
-6
-7
-8
-9
-10</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+5</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { NAMESPACE } from './constants'
 &nbsp;
-export const fetchAll = `${NAMESPACE}/FETCH_ALL`
-export const fetchAllInit = `${NAMESPACE}/FETCH_ALL_INIT`
-export const fetchAllSuccess = `${NAMESPACE}/FETCH_ALL_SUCCESS`
-export const fetchAllFailure = `${NAMESPACE}/FETCH_ALL_FAILURE`
-&nbsp;
-export const addResponse = `${NAMESPACE}/ADD_RESPONSE`
-export const cleanResponses = `${NAMESPACE}/CLEAN_RESPONSES`
+export const openAlert = `${NAMESPACE}/OPEN_ALERT`
+export const closeAlert = `${NAMESPACE}/CLOSE_ALERT`
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

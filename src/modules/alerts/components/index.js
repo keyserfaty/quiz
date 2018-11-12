@@ -9,7 +9,7 @@ import UserFeedback from './UserFeedback/UserFeedbackContainer'
 
 import * as selectors from '../selectors'
 
-const Modal = (props) => {
+const Alert = (props) => {
   const { type } = props
 
   if (!type) return <View />
@@ -37,4 +37,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Modal)
+)(Alert)

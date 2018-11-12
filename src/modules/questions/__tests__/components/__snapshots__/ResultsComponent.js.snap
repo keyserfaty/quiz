@@ -27,11 +27,12 @@ exports[`Should render 1`] = `
       <Component
         style={
           Object {
+            "alignItems": "center",
             "borderColor": "#74FFC6",
             "borderWidth": 1,
+            "marginBottom": 16,
             "marginTop": 16,
             "padding": 6,
-            "textAlign": "center",
           }
         }
       >
@@ -43,8 +44,14 @@ exports[`Should render 1`] = `
     </Component>
   }
 >
-  <ScrollViewMock>
-    <Component>
+  <Component
+    style={
+      Object {
+        "height": 450,
+      }
+    }
+  >
+    <ScrollViewMock>
       <Component
         style={
           Object {
@@ -68,7 +75,7 @@ exports[`Should render 1`] = `
           Some question
         </Component>
       </Component>
-    </Component>
-  </ScrollViewMock>
+    </ScrollViewMock>
+  </Component>
 </StepTemplate>
 `;

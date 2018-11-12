@@ -1,251 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should display a spinner: initial render 1`] = `
-<Component
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "rgba(0, 0, 0, 0.3)",
-        "height": 1334,
-        "justifyContent": "center",
-        "position": "absolute",
-        "top": 0,
-        "width": 750,
-      },
-      undefined,
-    ]
-  }
->
-  <Component
-    style={
-      Object {
-        "backgroundColor": "white",
-        "borderRadius": 3,
-        "justifyContent": "space-between",
-        "paddingHorizontal": 24,
-        "paddingTop": 22,
-        "width": "80%",
-      }
-    }
-  >
-    <Component>
-      <Component
-        style={
-          Object {
-            "color": "rgba(0,0,0, 0.87)",
-            "fontSize": 19,
-            "lineHeight": 27,
-            "marginBottom": 8,
-          }
-        }
-      >
-        Some title
-      </Component>
-      <Component
-        style={
-          Object {
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": 24,
-          }
-        }
-      >
-        <Component
-          animating={true}
-          color="#0000ff"
-          hidesWhenStopped={true}
-          size="large"
-        />
-      </Component>
-    </Component>
-    <Component
-      style={
-        Object {
-          "bottom": 0,
-          "marginTop": 120,
-          "position": "relative",
-        }
-      }
-    />
-  </Component>
-</Component>
-`;
-
-exports[`Should only display a subtitle: initial render 1`] = `
-<Component
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "rgba(0, 0, 0, 0.3)",
-        "height": 1334,
-        "justifyContent": "center",
-        "position": "absolute",
-        "top": 0,
-        "width": 750,
-      },
-      undefined,
-    ]
-  }
->
-  <Component
-    style={
-      Object {
-        "backgroundColor": "white",
-        "borderRadius": 3,
-        "justifyContent": "space-between",
-        "paddingHorizontal": 24,
-        "paddingTop": 22,
-        "width": "80%",
-      }
-    }
-  >
-    <Component>
-      <Component
-        style={
-          Object {
-            "color": "rgba(0,0,0,0.60)",
-            "fontSize": 15,
-            "lineHeight": 24,
-          }
-        }
-      >
-        Some subtitle
-      </Component>
-    </Component>
-    <Component
-      style={
-        Object {
-          "bottom": 0,
-          "marginTop": 120,
-          "position": "relative",
-        }
-      }
-    />
-  </Component>
-</Component>
-`;
-
-exports[`Should only display a title: initial render 1`] = `
-<Component
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "rgba(0, 0, 0, 0.3)",
-        "height": 1334,
-        "justifyContent": "center",
-        "position": "absolute",
-        "top": 0,
-        "width": 750,
-      },
-      undefined,
-    ]
-  }
->
-  <Component
-    style={
-      Object {
-        "backgroundColor": "white",
-        "borderRadius": 3,
-        "justifyContent": "space-between",
-        "paddingHorizontal": 24,
-        "paddingTop": 22,
-        "width": "80%",
-      }
-    }
-  >
-    <Component>
-      <Component
-        style={
-          Object {
-            "color": "rgba(0,0,0, 0.87)",
-            "fontSize": 19,
-            "lineHeight": 27,
-            "marginBottom": 8,
-          }
-        }
-      >
-        Some title
-      </Component>
-    </Component>
-    <Component
-      style={
-        Object {
-          "bottom": 0,
-          "marginTop": 120,
-          "position": "relative",
-        }
-      }
-    />
-  </Component>
-</Component>
-`;
-
 exports[`Should render: initial render 1`] = `
 <Component
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "rgba(0, 0, 0, 0.3)",
-        "height": 1334,
-        "justifyContent": "center",
-        "position": "absolute",
-        "top": 0,
-        "width": 750,
-      },
-      undefined,
-    ]
+    Object {
+      "alignItems": "center",
+      "height": 1334,
+      "justifyContent": "flex-end",
+      "position": "absolute",
+      "width": 750,
+    }
   }
 >
   <Component
     style={
-      Object {
-        "backgroundColor": "white",
-        "borderRadius": 3,
-        "justifyContent": "space-between",
-        "paddingHorizontal": 24,
-        "paddingTop": 22,
-        "width": "80%",
-      }
+      Array [
+        Object {
+          "borderRadius": 3,
+          "justifyContent": "space-between",
+          "marginBottom": 8,
+          "padding": 16,
+          "width": "95%",
+        },
+        undefined,
+      ]
     }
   >
-    <Component>
-      <Component
-        style={
-          Object {
-            "color": "rgba(0,0,0, 0.87)",
-            "fontSize": 19,
-            "lineHeight": 27,
-            "marginBottom": 8,
-          }
-        }
-      >
-        Some title
-      </Component>
-      <Component
-        style={
-          Object {
-            "color": "rgba(0,0,0,0.60)",
-            "fontSize": 15,
-            "lineHeight": 24,
-          }
-        }
-      >
-        Some subtitle
-      </Component>
-    </Component>
     <Component
       style={
         Object {
-          "bottom": 0,
-          "marginTop": 120,
-          "position": "relative",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
-    />
+    >
+      <Component
+        style={
+          Object {
+            "color": "rgba(0,0,0, 0.5)",
+            "fontSize": 16,
+            "lineHeight": 27,
+          }
+        }
+      >
+        Some msg
+      </Component>
+      <TouchableOpacity
+        activeOpacity={0.2}
+      >
+        <Component
+          style={
+            Object {
+              "color": "rgba(0,0,0, 0.5)",
+              "fontSize": 16,
+              "lineHeight": 27,
+            }
+          }
+        >
+          X
+        </Component>
+      </TouchableOpacity>
+    </Component>
   </Component>
 </Component>
 `;

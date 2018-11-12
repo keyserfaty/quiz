@@ -10,7 +10,7 @@ export const alerts = {
       type: alertTypes.userFeedback, 
       data: {
         type: 'success',
-        msg: "Welcome back! Let's see where you ..." 
+        msg: "Welcome back! Let's continue! 🌈" 
       }
     } 
   },
@@ -20,7 +20,7 @@ export const alerts = {
       type: alertTypes.userFeedback, 
       data: {
         type: 'failure',
-        msg: "You've lost connection" 
+        msg: "You've lost connection 😔" 
       }
     } 
   } 

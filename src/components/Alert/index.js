@@ -1,46 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Text, ActivityIndicator } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 
 import { styles } from './statics/styles'
 
-const Modal = (props) => {
-  const { type, title, subtitle, spinner } = props
+const Alert = (props) => {
+  const { type, msg, onCloseAlert } = props
 
   return (
-    <View style={[styles.container, type]}>
-      <View style={styles.modal}>
-        <View style={styles.titleContainer}>
-          { title && (
-            <Text style={styles.title}>
-              {title}
-            </Text>
-          ) }
-          { subtitle && (
-            <Text style={styles.subtitle}>
-              {subtitle}
-            </Text>
-          ) }
-          { spinner && (
-            <View style={styles.spinner}>
-              <ActivityIndicator size="large" color="#0000ff" />
-            </View>
-          )}
-        </View>
-        <View style={styles.children}>
-          {props.children}
+    <View style={styles.container}>
+      <View style={[styles.alert, styles[type]]}>
+        <View style={styles.msgContainer}>
+          <Text style={styles.msg}>{msg}</Text>
+          <TouchableOpacity onPress={onCloseAlert}>
+            <Text style={styles.msg}>X</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
   )
 }
 
-Modal.propTypes = {
+Alert.propTypes = {
   type: PropTypes.string,
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  spinner: PropTypes.bool,
-  children: PropTypes.any
+  msg: PropTypes.string,
+  children: PropTypes.any,
+  onCloseAlert: PropTypes.func
 }
 
-export default Modal
+export default Alert

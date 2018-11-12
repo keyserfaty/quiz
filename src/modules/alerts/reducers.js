@@ -11,7 +11,7 @@ const initialState = {
 }
 
 const reducer = handleActions({
-  [actions.openModal]: (state, action) => ({
+  [actions.openAlert]: (state, action) => ({
     ...state,
     type: types[action.payload.type],
     onConfirm: action.payload.onConfirm,
@@ -19,7 +19,7 @@ const reducer = handleActions({
     data: action.payload.data
   }),
 
-  [actions.closeModal]: (state, action) => ({
+  [actions.closeAlert]: (state, action) => ({
     ...initialState
   })
 

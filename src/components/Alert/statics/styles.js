@@ -5,40 +5,36 @@ const window = Dimensions.get('window')
 export const styles = {
   container: {
     position: 'absolute',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
     height: window.height,
     width: window.width,
     alignItems: 'center',
-    justifyContent: 'center',
-    top: 0
+    justifyContent: 'flex-end'
   },
-  modal: {
-    backgroundColor: 'white',
+  alert: {
     borderRadius: 3,
-    width: '80%',
+    width: '95%',
     justifyContent: 'space-between',
-    paddingHorizontal: 24,
-    paddingTop: 22
+    padding: 16,
+    marginBottom: 8
   },
-  title: {
-    fontSize: 19,
+  msg: {
+    fontSize: 16,
     lineHeight: 27,
-    marginBottom: 8,
-    color: 'rgba(0,0,0, 0.87)'
-  },
-  subtitle: {
-    fontSize: 15,
-    lineHeight: 24,
-    color: 'rgba(0,0,0,0.60)'
-  },
-  spinner: {
-    padding: 24,
-    justifyContent: 'center',
-    alignItems: 'center'
+    color: 'rgba(0,0,0, 0.5)'
   },
   children: {
     marginTop: 120,
     position: 'relative',
     bottom: 0
+  },
+  success: {
+    backgroundColor: '#86DE8E'
+  },
+  failure: {
+    backgroundColor: '#E67777'
+  },
+  msgContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   }
 }

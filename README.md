@@ -1,4 +1,6 @@
-## Code Challenge Karen Serfaty 
+## Quiz!
+
+This is a small project thats uses React Native (iOS/Android), Redux, Redux Saga and Reselect. 
 
 🌈🌈
 

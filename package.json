@@ -12,7 +12,7 @@
     "linter": "node_modules/.bin/eslint src"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "expo": "^31.0.2",
     "prop-types": "^15.6.2",
     "ramda": "^0.25.0",
